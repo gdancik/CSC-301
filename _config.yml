@@ -15,4 +15,4 @@ markdown: kramdown
 timezone: America/New_York
 course: CSC-360 
 
-theme: jekyll-theme-cayman
+#theme: jekyll-theme-cayman
