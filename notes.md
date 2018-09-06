@@ -14,6 +14,9 @@ exclude_from_nav: false
     * [display.html]({{ site.baseurl }}/data/notes/display.html)
     * [navbar.html]({{ site.baseurl }}/data/notes/navbar.html)
     * [hide.html]({{ site.baseurl }}/data/notes/hide.html)
+* Form Example
+    * [forms.html]({{ site.baseurl }}/data/notes/forms.html)
+    * [demo.php]({{ site.baseurl }}/data/notes/demo.php)
 
 {% comment %}
   [KNN R script]({{ site.baseurl }}/data/notes/knn.R)
