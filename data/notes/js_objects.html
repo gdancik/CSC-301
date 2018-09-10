@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title> Javascript Object Example </title>
+
+</head>
+
+<body>
+
+<h1> Javascript Object Example </h1>
+
+<script>
+
+    thisCourse = {course: "CSC-360", time: "MWF, 2:00 - 2:50"};
+
+   
+    document.write("This course is " + thisCourse.course + "<br>");
+    document.write("This course meets at the following time: " + 
+        thisCourse.time + "<br><br>");
+                
+document.write("This semester I am teaching the following courses: ");
+document.write("<ul>");
+
+myCourses = [ {course: "CSC-315", time: "MWF, 11:00 - 11:50"} ]; 
+myCourses.push(thisCourse);
+myCourses.push( {course: "CSC-450-01", time: "MW, 4:00 - 5:15"} );
+myCourses.push( {course: "CSC-450-02", time: "MWF, 1:00 - 1:50"} );
+
+for (var i = 0; i < myCourses.length; i++) {
+    document.write("<li>" + myCourses[i].course + ": " +
+        myCourses[i].time + "</li>"); 
+}
+document.write("</ul>");
+</script>
+
+
+</body>
+
+</html>
+
+
+
+
+

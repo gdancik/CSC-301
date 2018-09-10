@@ -17,6 +17,10 @@ exclude_from_nav: false
 * Form Example
     * [forms.html]({{ site.baseurl }}/data/notes/forms.html)
     * [demo.php]({{ site.baseurl }}/data/notes/demo.php)
+* [Javascript]({{ site.baseurl }}/data/notes/Javascript.pdf) 
+    * [Javascript Basics]({{ site.baseurl }}/data/notes/js_basics.html)
+    * [Javascript Array]({{ site.baseurl }}/data/notes/js_array.html)
+    * [Javascript Objects]({{ site.baseurl }}/data/notes/js_objects.html)
 
 {% comment %}
   [KNN R script]({{ site.baseurl }}/data/notes/knn.R)
