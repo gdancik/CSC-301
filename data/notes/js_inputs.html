@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title> Javascript and HTM Inputs </title>
+
+<style>
+.input{
+	display: inline-block;
+	width: 300px;
+}
+	
+#output {
+	border: 1px thin black;
+	background-color:whitesmoke;
+	color:blue;
+	height: 100px;
+	
+}
+	
+</style>
+
+</head>
+
+<body>
+
+<h1> Some Javascript Examples for Interacting with Inputs </h1>
+
+<div class = "input">
+	This is a checkbox: <input id = "chk" type = "checkbox">
+</div>
+	
+<div class = "input"> 
+	<label for "num">Enter a number: </label>
+	<input id = "num" type = "number">
+</div>
+	
+<button onclick = "submitInfo();"> Submit </button>
+<br>
+
+
+<br><br>
+<div id = "output">  </div>
+
+<script>
+
+// gets intro div by its id, and changes its innerHTML
+function submitInfo() {
+	var checkStatus, numberValue;
+	
+	// determine if checked box is "checked" or "not checked", and store in checkStatus
+	
+	// get the number entered and store this in numberValue
+	
+	
+	var outString = "<br>" + 
+					"the checkbox is: " + checkStatus + "<br>" +
+				   "the number is: " + numberValue;
+	
+	document.getElementById("output").innerHTML = outString;
+}
+
+</script>
+
+<br><br>
+<i> Exercises: </i> Use Javascript to:
+<ul>
+    <li> Output whether or not the checkbox is checked  </li>
+	<li> Output the number entered </li>
+</ul>
+
+
+</body>
+
+</html>
+
+
+
+
+
