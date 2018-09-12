@@ -10,3 +10,4 @@ exclude_from_nav: false
 * [Assignment #2]({{ site.baseurl }}/data/hw/Assignment2.pdf) (Due: Monday, 9/10/18)
 <hr>
 * [Assignment #3]({{ site.baseurl }}/data/hw/Assignment3.pdf) (Due: Monday, 9/17/18)
+    * [registration.html]({{ site.baseurl }}/data/hw/registration.html) 

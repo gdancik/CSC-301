@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title> Registration Page</title>
+
+<style>
+
+#login {
+	border: 1px solid black;
+	height: 100px;
+	width: 40%;
+	display:inline-block;
+}
+	
+#page {
+	background-color:black;
+	color:white;				
+}
+
+label {
+	color:dodgerblue;
+}
+	
+</style>
+
+</head>
+
+<body>
+
+<h1> Please register by completing the information below </h1>
+
+<div id = "login">
+	<div id = "page">Page 1/2</div>
+	<label id = "lbl" for = "fname"> First name: </label>
+	<input id = "fname" type = "text" placeholder = "first name">
+	<button id = "btn" onclick = "continue1();"> Continue </button>
+</div>
+
+
+<script>
+
+var fName;
+var lName;
+	
+// gets intro div by its id, and changes its innerHTML
+function continue1() {
+
+	alert("The button was clicked!");
+	
+}
+	
+
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
