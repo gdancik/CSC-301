@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+<title> Change CSS of all elements using jQuery </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<html>
+
+<body>
+<script>
+
+$(document).ready(function(){  
+
+    jQuery("*").mouseenter(function(event) {
+        $(this).css("background-color", "yellow")
+        //alert($(this)[0].nodeName);
+    });
+
+    jQuery("*").mouseout(function() {
+        $(this).css("background-color", "white")
+    });
+
+}); 
+
+</script>
+
+
+<h1> Change CSS on mouse enter/exit using jQuery </h1>
+<div> This is a div 
+    <p> This is a paragraph </p>
+</div>
+
+<ul>
+    <li> List item 1 </li>
+    <li> List item 2 with a <b> bold </b> element </li>
+    <li> List item 3 </li>
+</ul>

@@ -24,6 +24,9 @@ exclude_from_nav: false
     * [Javascript Inputs]({{ site.baseurl }}/data/notes/js_inputs.html)
 * A closer look at the position property 
     * [position.html]({{ site.baseurl }}/data/notes/position.html)
+* [Web Frameworks]({{ site.baseurl }}/data/notes/WebFrameWorks.pdf) 
+    * [jQuery Example #1]({{ site.baseurl }}/data/notes/jquery.html)
+    * [jQuery Example #2]({{ site.baseurl }}/data/notes/jquery2.html)
 
 {% comment %}
   [KNN R script]({{ site.baseurl }}/data/notes/knn.R)

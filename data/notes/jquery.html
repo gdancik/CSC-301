@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> jQuery example </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<script>
+
+// $(document).ready() is called when the page is loaded. The code below uses
+// typical jQuery syntax using anonymous functions -- see below for alternative
+$(document).ready(function(){
+    $("h1").click(function(){
+        $(this).css("background-color", "yellow");
+    });
+});
+
+/*
+// function to change the background color of the current element
+function changeBackground() {
+     $(this).css("background-color", "yellow");
+}
+
+// setup h1, so clicking will change background color 
+function setup(){
+    $("h1").click(changeBackground);
+};
+
+// call setup() when the document is loaded
+$(document).ready(setup);
+
+*/
+
+</script>
+
+<body>
+
+
+<h1> jQuery Example </h1>
+
+<p class = "test"> Paragraph 1 with class "test"</p>
+<p> Paragraph 2 with no class</p>
+<p class = "test"> Paragraph 3 with class "test"</p>
+
+<button onclick = "addBorders();"> Add Borders </button>
+
+<script>
+
+function addBorders() {
+
+    // get array of elements
+    paragraphs = $("p.test");
+    for (var i = 0; i < paragraphs.length; i++) {
+        console.log(paragraphs[i].innerHTML);
+    }
+
+    $("p.test").css("border", "solid 1px black");
+}
+</script>
+
+</body>
+</html>
+
+
+
