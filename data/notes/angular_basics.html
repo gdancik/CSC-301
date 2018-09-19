@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> AngularJS Basics </title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+
+<h1> AngularJS Basics </h1>
+
+<div>
+Some of the angular directives used are below:
+<ul>
+    <li> <i>ng-init</i> sets the initial placeholder value in the first text box</li>
+
+    <li> <i> ng-model </i> is used to bind the text box values to the angular variables 
+        <i> userString</i> and <i>userColor</i> </li>
+
+    <li> <i> ng-bind </i> is used to bind the value of <i>usercolor</i> to the last paragraph </li>
+
+    <li> Angular <i>expressions</i> (such as <i>{{userColor}}</i>) are used to bind angular data to HTML, including the background-color of one of the <i>div</i> elements.</li> 
+
+</ul>
+
+</div>
+
+<hr>
+
+<div ng-app="" ng-init="placeholder='Enter a string'" 
+               style = "background-color:{{userColor}}">
+
+<p>Input something in the input box:</p>
+<p>Type something: <input type="text" placeholder = {{placeholder}} ng-model="userString"></p>
+<p>You wrote: 
+    <span style = "color:red">{{ userString }}</span>
+</p>
+<hr>
+<div style="background-color: {{userColor}}">
+
+    <p> Type a color: <input type = "text" ng-model="userColor"></p>
+    <p> The current background colory is:  </p>
+    <p ng-bind="userColor"></p>
+</div>
+
+</div>
+</body>
+</html>
+
+

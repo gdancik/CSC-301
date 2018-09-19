@@ -38,6 +38,8 @@ exclude_from_nav: false
 * [Web Frameworks]({{ site.baseurl }}/data/notes/WebFrameworks.pdf) 
     * [jQuery Example #1]({{ site.baseurl }}/data/notes/jquery.html)
     * [jQuery Example #2]({{ site.baseurl }}/data/notes/jquery2.html)
+    * [Angular Basics Example]({{ site.baseurl }}/data/notes/angular_basics.html)
+    * [Angular Controller Example]({{ site.baseurl }}/data/notes/angular_controller.html)
 
 {% comment %}
   [KNN R script]({{ site.baseurl }}/data/notes/knn.R)

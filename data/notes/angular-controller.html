@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> AngularJS Controller Example </title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+
+<h1> Demonstration of an AngularJS Controller </h1>
+
+<p> A controller controls the data of AngularJS applications </p>
+<p> The <i>controller1</i> controller includes an array of courses, and a function </p>
+<p> The <i>ng-repeat</i> directive is used to output each course </p>
+<p> The <i>ng-click</i> directive is used to specify an <i>onclick</i> function </p>
+<p> What happens when you switch to <i>controller2</i>?</p>
+
+<hr>
+
+<div ng-app="myApp" ng-controller="controller1"> 
+    Below are the courses that <b>{{name}}</b> is teaching:
+    <ul>
+        <li ng-repeat="x in courses" ng-click = 'displayInfo(x);'>
+        {{ x }}
+        </li>
+    </ul>
+</div>
+
+<script>
+
+// create a module (like a container for different parts of the app)
+//      objects in a module do not exist outside of it
+var app = angular.module('myApp', []);
+
+// the controller (myCtrl) is a javascript function, and is always invoked with
+// $scope, which is the application object (that can contain data and 
+// functions)
+app.controller('controller1', function($scope) {
+
+    // create variable 'name'
+    $scope.name = "Garrett Dancik";
+
+    // create array 'courses'
+    $scope.courses = ["CSC-315-01", "CSC-360-05", "CSC-450-01", "CSC-450-02"];
+
+    // create function
+    $scope.displayInfo = function(course) {
+        console.log("course is: " + course);
+        alert("You clicked on:  " + course);
+    }
+});
+
+
+app.controller('controller2', function($scope) {
+    $scope.name = "Amanda Jacobs";
+});
+
+</script>
+
+</body>
+</html>
+
+
