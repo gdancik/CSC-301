@@ -3,35 +3,53 @@
 <head>
 <title> AngularJS Controller Example </title>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<style>
+    div {
+        border:1px solid black;
+    }
+</style>
 </head>
 <body>
 
 <h1> Demonstration of an AngularJS Controller </h1>
 
-<p> A controller controls the data of AngularJS applications </p>
+<p> A controller specifies the objects(data and functions) in an AngularJS applications </p>
 <p> The <i>controller1</i> controller includes an array of courses, and a function </p>
 <p> The <i>ng-repeat</i> directive is used to output each course </p>
 <p> The <i>ng-click</i> directive is used to specify an <i>onclick</i> function </p>
-<p> What happens when you switch to <i>controller2</i>?</p>
-
+<p> Each controller defines its own <i>scope</i>, so that all objects are self-contained</p>
+<p> In the example below, both <i>controller1</i> and <i>controller2</i> have a <i>name</i> variable
 <hr>
 
-<div ng-app="myApp" ng-controller="controller1"> 
-    Below are the courses that <b>{{name}}</b> is teaching:
-    <ul>
-        <li ng-repeat="x in courses" ng-click = 'displayInfo(x);'>
-        {{ x }}
-        </li>
-    </ul>
-</div>
+<div ng-app="myApp"> 
+    <div ng-controller="controller1">
+    
+        <h2> This div uses controller1 to output <span ng-non-bindable>{{name}}</span> </h2>
+            Below are the courses that <b>{{name}}</b> is teaching:
+        <ul>
+            <li ng-repeat="x in courses" ng-click = 'displayInfo(x);'>
+            {{ x }}
+            </li>
+        </ul>
+    </div>
 
+    <div ng-controller="controller2">
+        <h2> This div uses controller2 to output <span ng-non-bindable>{{name}}</span> </h2>
+        Hello {{name}}.
+    </div>
+    <p ng-controller="controller1">
+    Back to {{name}}
+    </p>
+
+</div>
+<br><br>
 <script>
 
 // create a module (like a container for different parts of the app)
 //      objects in a module do not exist outside of it
 var app = angular.module('myApp', []);
 
-// the controller (myCtrl) is a javascript function, and is always invoked with
+// the controller is a javascript function, and is always invoked with
 // $scope, which is the application object (that can contain data and 
 // functions)
 app.controller('controller1', function($scope) {
