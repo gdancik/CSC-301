@@ -36,10 +36,16 @@ exclude_from_nav: false
     * [position.html]({{ site.baseurl }}/data/notes/position.html)
 * [Javascript Exercises]({{ site.baseurl }}/data/notes/JavascriptExercises.pdf) 
 * [Web Frameworks]({{ site.baseurl }}/data/notes/WebFrameworks.pdf) 
+<a data-toggle="collapse" data-target="#frameworks">(Click to show/hide examples)</a>
+<div markdown="1" id = "frameworks" class = "collapse" style = "margin:0px">
+- Web Framework examples
     * [jQuery Example #1]({{ site.baseurl }}/data/notes/jquery.html)
     * [jQuery Example #2]({{ site.baseurl }}/data/notes/jquery2.html)
     * [Angular Basics Example]({{ site.baseurl }}/data/notes/angular_basics.html)
     * [Angular Controller Example]({{ site.baseurl }}/data/notes/angular_controller.html)
+</div>
+* [Chrome Browser Extensions]({{ site.baseurl }}/data/notes/Extensions.pdf) 
+    * [extension1.zip]({{ site.baseurl }}/data/notes/extension1.zip)
 
 {% comment %}
   [KNN R script]({{ site.baseurl }}/data/notes/knn.R)
