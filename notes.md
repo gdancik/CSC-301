@@ -49,7 +49,7 @@ exclude_from_nav: false
     * Asynchronous Behavior
         * [asynchronous_example.html]({{ site.baseurl }}/data/notes/asynchronous_example.html)
         * [callback.html]({{ site.baseurl }}/data/notes/callback.html)
-    * [extension_with_jquery.zip]({{ site.baseurl }}/data/notes/extension_with_jquery.zip.zip)
+    * [extension_with_jquery.zip]({{ site.baseurl }}/data/notes/extension_with_jquery.zip)
     * [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
 
 {% comment %}
