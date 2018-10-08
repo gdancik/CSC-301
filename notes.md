@@ -51,6 +51,8 @@ exclude_from_nav: false
         * [callback.html]({{ site.baseurl }}/data/notes/callback.html)
     * [extension_with_jquery.zip]({{ site.baseurl }}/data/notes/extension_with_jquery.zip)
     * [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
+* [Python programming basics]({{ site.baseurl }}/data/notes/PythonBasics.zip) 
+
 
 {% comment %}
   [KNN R script]({{ site.baseurl }}/data/notes/knn.R)
