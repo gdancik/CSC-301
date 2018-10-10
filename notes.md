@@ -52,6 +52,7 @@ exclude_from_nav: false
     * [extension_with_jquery.zip]({{ site.baseurl }}/data/notes/extension_with_jquery.zip)
     * [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
 * [Python programming basics]({{ site.baseurl }}/data/notes/PythonBasics.zip) 
+    * [Python dictionaries]({{ site.baseurl }}/data/notes/dictionaries.py) 
 
 
 {% comment %}
