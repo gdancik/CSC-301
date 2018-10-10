@@ -15,3 +15,5 @@ exclude_from_nav: false
     * [links.html]({{ site.baseurl }}/data/hw/links.html) 
     * [buttons.html]({{ site.baseurl }}/data/hw/buttons.html) 
 * [Assignment #5]({{ site.baseurl }}/data/hw/Assignment5.pdf) (Due: Monday, 10/08/18)
+* [Assignment #6]({{ site.baseurl }}/data/hw/Assignment6.pdf) (Due: Monday, 10/015/18)
+    * [hw6.py]({{ site.baseurl }}/data/hw/hw6.py) 
