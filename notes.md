@@ -53,7 +53,10 @@ exclude_from_nav: false
     * [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
 * [Python programming basics]({{ site.baseurl }}/data/notes/PythonBasics.zip) 
     * [Python dictionaries]({{ site.baseurl }}/data/notes/dictionary.py) 
-
+* [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
+    * [Schedule.html]({{ site.baseurl }}/data/notes/schedule.html) 
+    * [Web Scraping Demo]({{ site.baseurl }}/data/notes/WebScrapingDemo.py) 
+    
 
 {% comment %}
   [KNN R script]({{ site.baseurl }}/data/notes/knn.R)
