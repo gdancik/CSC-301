@@ -135,7 +135,7 @@ soup.find_all("div", {"class": "additional"})
 
 
 ################################################################
-# Exercise: find and print out the courses I teach
+# Exercise: find and print out the courses that I teach
 ################################################################
 
 ################################################################

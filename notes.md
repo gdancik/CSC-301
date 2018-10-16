@@ -56,6 +56,8 @@ exclude_from_nav: false
 * [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
     * [Schedule.html]({{ site.baseurl }}/data/notes/schedule.html) 
     * [Web Scraping Demo]({{ site.baseurl }}/data/notes/WebScrapingDemo.py) 
+    * [RequestsAndScraping]({{ site.baseurl }}/data/notes/RequestsAndScraping.py) 
+    * [WeatherScraper]({{ site.baseurl }}/data/notes/WeatherScraper.py) 
     
 
 {% comment %}

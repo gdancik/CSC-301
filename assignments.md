@@ -17,3 +17,4 @@ exclude_from_nav: false
 * [Assignment #5]({{ site.baseurl }}/data/hw/Assignment5.pdf) (Due: Monday, 10/08/18)
 * [Assignment #6]({{ site.baseurl }}/data/hw/Assignment6.pdf) (Due: Monday, 10/015/18)
     * [hw6.py]({{ site.baseurl }}/data/hw/hw6.py) 
+    * [hw6_review.py]({{ site.baseurl }}/data/hw/hw6_review.py) 
