@@ -45,12 +45,16 @@ exclude_from_nav: false
     * [Angular Controller Example]({{ site.baseurl }}/data/notes/angular_controller.html)
 </div>
 * [Chrome Browser Extensions]({{ site.baseurl }}/data/notes/Extensions.pdf) 
-    * [extension1.zip]({{ site.baseurl }}/data/notes/extension1.zip)
+<a data-toggle="collapse" data-target="#scrape">(Click to show/hide examples)</a>
+<div markdown="1" id = "scrape" class = "collapse" style = "margin:0px">
+- Chrome extension examples 
+   * [extension1.zip]({{ site.baseurl }}/data/notes/extension1.zip)
     * Asynchronous Behavior
         * [asynchronous_example.html]({{ site.baseurl }}/data/notes/asynchronous_example.html)
         * [callback.html]({{ site.baseurl }}/data/notes/callback.html)
     * [extension_with_jquery.zip]({{ site.baseurl }}/data/notes/extension_with_jquery.zip)
     * [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
+</div>
 * [Python programming basics]({{ site.baseurl }}/data/notes/PythonBasics.zip) 
     * [Python dictionaries]({{ site.baseurl }}/data/notes/dictionary.py) 
 * [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
