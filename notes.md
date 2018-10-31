@@ -62,7 +62,8 @@ exclude_from_nav: false
     * [Web Scraping Demo]({{ site.baseurl }}/data/notes/WebScrapingDemo.py) 
     * [RequestsAndScraping]({{ site.baseurl }}/data/notes/RequestsAndScraping.py) 
     * [WeatherScraper]({{ site.baseurl }}/data/notes/WeatherScraper.py) 
-    
+
+* [Selenium Example]({{ site.baseurl }}/data/notes/selenium_ex.py) 
 
 {% comment %}
   [KNN R script]({{ site.baseurl }}/data/notes/knn.R)
