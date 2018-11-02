@@ -64,6 +64,7 @@ exclude_from_nav: false
     * [WeatherScraper]({{ site.baseurl }}/data/notes/WeatherScraper.py) 
 
 * [Selenium Example]({{ site.baseurl }}/data/notes/selenium_ex.py) 
+    * [Unit Testing Example]({{ site.baseurl }}/data/notes/unittest_ex.py) 
 
 {% comment %}
   [KNN R script]({{ site.baseurl }}/data/notes/knn.R)
