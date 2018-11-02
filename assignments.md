@@ -20,5 +20,5 @@ exclude_from_nav: false
     * [hw6_review.py]({{ site.baseurl }}/data/hw/hw6_review.py) 
 * [Assignment #7]({{ site.baseurl }}/data/hw/Assignment7.pdf) (Due: Monday, 10/22/18)
 * [Assignment #8]({{ site.baseurl }}/data/hw/Assignment7.pdf) (Due: Friday, 11/09/18)
-    * [Number Cruncher web page]({{ site.baseurl }}/data/hw/number_cruncher.html
-    * [Number Cruncher Unit Test]({{ site.baseurl }}/data/hw/TestNumberCruncher.py 
+    * [Number Cruncher web page]({{ site.baseurl }}/data/hw/number_cruncher.html)
+    * [Number Cruncher Unit Test]({{ site.baseurl }}/data/hw/TestNumberCruncher.py) 
