@@ -68,7 +68,7 @@ exclude_from_nav: false
 </div>
 * [Selenium Example]({{ site.baseurl }}/data/notes/selenium_ex.py) 
     * [Unit Testing Example]({{ site.baseurl }}/data/notes/unittest_ex.py) 
-* [JSON and Web APIs]({{ site.baseurl }}/data/notes/selenium_ex.py) 
+* JSON and Web APIs
     * [JSON example]({{ site.baseurl }}/data/notes/json_ex.html) 
     * [Pokémon API (HTML)]({{ site.baseurl }}/data/notes/pokemon_api.html) 
     * [Pokémon API (Python)]({{ site.baseurl }}/data/notes/pokemon_api.py) 
