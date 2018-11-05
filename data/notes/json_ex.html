@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<! ------------------------------------------------------------------------------------
+  Use JSON.stringify(x) to convert object x into a JSON (string) format
+  Use JSON.parse(x) to convert the JSON object 'x' into a javascript object
+
+  Use localStorage.setItem("key", x) to save the JSON object 'x' to local storage 
+  Use localStorage.getItem("key") to read the key (in JSON format) from local storage
+
+  More info: https://www.w3schools.com/js/js_json_intro.asp
+ -------------------------------------------------------------------------------------->
+
+<html>
+<body>
+
+<h1> Working with JSON (Javascript Object Notation Objects) </h1>
+
+<div id = "course"> </div>
+<br>
+<script>
+var csc360 = { course: "CSC360", time: "MWF, 2:00 - 2:50" };
+json_csc360 = JSON.stringify(csc360);
+document.getElementById("course").innerHTML = "course in JSON format: " + json_csc360;
+</script>
+   
+<hr>
+<br>
+    <! -- use return false to prevent page from reloading -->
+    <form onsubmit = "return false;">
+    First Name: <input id = 'first' type = 'text' required> <br>
+    Last Name:  <input id = 'last' type = 'text' required> <br><br>
+    <input type = "submit" onclick = "saveName()" value = "Submit"> <input type = "reset">
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <p id="name"></p>
+
+<script>
+
+function saveName() {
+    var firstName = document.getElementById('first').value.trim();
+    var lastName = document.getElementById('last').value.trim();
+
+    if (firstName == '' || lastName == '') {
+        return;
+    }
+
+    // create person object
+    var person = {first: firstName, last: lastName};
+
+    // save data to local storage in JSON format
+    var personStr = JSON.stringify(person);
+    localStorage.setItem("name", personStr);
+
+    //Retrieving data:
+    var storedNameString = localStorage.getItem("name");
+    var storedName = JSON.parse(storedNameString);
+
+    document.getElementById("name").innerHTML = "Your name is: " + storedName.first + " " + storedName.last;
+
+}
+</script>
+
+</body>
+</html>
+
+

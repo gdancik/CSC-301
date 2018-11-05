@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>PokeAPI Example</h2>
+<button type="button" onclick="getInfo()">Get Info from PokeAPI</button>
+<br><br>
+<div id="info"></div>
+
+<script>
+var record;
+
+function getInfo() {
+
+    var xhttp = new XMLHttpRequest();
+
+    // since Javascript is asynchronous, we respond to a state change event for the request
+    xhttp.onreadystatechange = function() {
+        // if request is successful
+        if (this.readyState == 4 && this.status == 200) {
+            recordStr = this.responseText; // JSON format
+            record = JSON.parse(recordStr);
+            msg = "Name: " + record.name + "<br>Abilities: ";
+            for (var i = 0; i < record.abilities.length; i++) {
+                msg += record.abilities[i].ability.name;
+                if (i + 1 != record.abilities.length) {
+                    msg += ", ";
+                }
+            }
+            document.getElementById("info").innerHTML = msg;
+        }
+    }
+        xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/1/", true);
+        xhttp.send();
+};
+</script>
+
+</body>
+</html>
+

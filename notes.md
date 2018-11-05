@@ -58,13 +58,20 @@ exclude_from_nav: false
 * [Python programming basics]({{ site.baseurl }}/data/notes/PythonBasics.zip) 
     * [Python dictionaries]({{ site.baseurl }}/data/notes/dictionary.py) 
 * [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
+<a data-toggle="collapse" data-target="#scraping">(Click to show/hide examples)</a>
+<div markdown="1" id = "scraping" class = "collapse" style = "margin:0px">
+- Web Scraping Examples
     * [Schedule.html]({{ site.baseurl }}/data/notes/schedule.html) 
     * [Web Scraping Demo]({{ site.baseurl }}/data/notes/WebScrapingDemo.py) 
     * [RequestsAndScraping]({{ site.baseurl }}/data/notes/RequestsAndScraping.py) 
     * [WeatherScraper]({{ site.baseurl }}/data/notes/WeatherScraper.py) 
-
+</div>
 * [Selenium Example]({{ site.baseurl }}/data/notes/selenium_ex.py) 
     * [Unit Testing Example]({{ site.baseurl }}/data/notes/unittest_ex.py) 
+* [JSON and Web APIs]({{ site.baseurl }}/data/notes/selenium_ex.py) 
+    * [JSON example]({{ site.baseurl }}/data/notes/json_ex.html) 
+    * [Pokémon API (HTML)]({{ site.baseurl }}/data/notes/pokemon_api.html) 
+    * [Pokémon API (Python)]({{ site.baseurl }}/data/notes/pokemon_api.py) 
 
 {% comment %}
   [KNN R script]({{ site.baseurl }}/data/notes/knn.R)
