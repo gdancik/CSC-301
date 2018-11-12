@@ -73,7 +73,9 @@ exclude_from_nav: false
     * [Pokémon API (HTML)]({{ site.baseurl }}/data/notes/pokemon_api.html) 
     * [Pokémon API (Python)]({{ site.baseurl }}/data/notes/pokemon_api.py) 
 * [R/Shiny]({{ site.baseurl }}/data/notes/R.pdf) 
-
+    * [rvest package]({{ site.baseurl }}/data/notes/revest.R) 
+    * [shiny package]({{ site.baseurl }}/data/notes/shiny.R) 
+    
 
 {% comment %}
   [KNN R script]({{ site.baseurl }}/data/notes/knn.R)

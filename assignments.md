@@ -26,3 +26,4 @@ exclude_from_nav: false
 * [Assignment #9]({{ site.baseurl }}/data/hw/Assignment9.pdf) (Due: Monday, 11/12/18)
 * Assignment #10
     * [Assignment #10A]({{ site.baseurl }}/data/hw/swirl.pdf) (not collected)
+    * [Assignment #10B]({{ site.baseurl }}/data/hw/babyNames.R) (Due: Friday, 11/16/18)
