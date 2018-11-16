@@ -19,7 +19,6 @@ exclude_from_nav: false
     * [hw6.py]({{ site.baseurl }}/data/hw/hw6.py) 
     * [hw6_review.py]({{ site.baseurl }}/data/hw/hw6_review.py) 
 * [Assignment #7]({{ site.baseurl }}/data/hw/Assignment7.pdf) (Due: Monday, 10/22/18)
-<hr>
 * [Assignment #8]({{ site.baseurl }}/data/hw/Assignment8.pdf) (Due: Friday, 11/09/18)
     * [Number Cruncher web page]({{ site.baseurl }}/data/hw/number_cruncher.html)
     * [Number Cruncher Unit Test]({{ site.baseurl }}/data/hw/TestNumberCruncher.py) 
@@ -27,3 +26,6 @@ exclude_from_nav: false
 * Assignment #10
     * [Assignment #10A]({{ site.baseurl }}/data/hw/swirl.pdf) (not collected)
     * [Assignment #10B]({{ site.baseurl }}/data/hw/babyNames.R) (Due: Friday, 11/16/18)
+
+<hr style = "height:2px; background-color:blue">
+* [Final Project]({{ site.baseurl }}/data/hw/FinalProject.pdf) (Due dates vary, submit through [Blackboard](http://easternct.blackboard.com))
