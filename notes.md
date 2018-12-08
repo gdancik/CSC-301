@@ -75,7 +75,7 @@ exclude_from_nav: false
 * [R/Shiny]({{ site.baseurl }}/data/notes/R.pdf) 
     * [rvest example]({{ site.baseurl }}/data/notes/rvest.R) 
     * [shiny overview]({{ site.baseurl }}/data/notes/shiny.R) 
-* [WrapUp]({{ site.baseurl }}/data/notes/WrapUp.pdf) 
+* [WrapUp]({{ site.baseurl }}/data/notes/Wrapup.pdf) 
     
 
 {% comment %}
