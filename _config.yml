@@ -13,6 +13,6 @@ baseurl: "/CSC-301"
 # Build settings
 markdown: kramdown
 timezone: America/New_York
-course: CSC-360 
+course: CSC-301 
 
 #theme: jekyll-theme-cayman
