@@ -8,6 +8,9 @@ exclude_from_nav: false
 
 * [Course Introduction]({{ site.baseurl }}/data/notes/Intro.pdf)
     * [Example web page]({{ site.baseurl }}/data/notes/example.html)
+
+{% comment %}
+
 * [HTML Tags]({{ site.baseurl }}/data/notes/HTML.pdf) 
     * [example]({{ site.baseurl }}/data/notes/tags.html)
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) <a data-toggle="collapse" data-target="#css">(Click to show/hide examples)</a>
@@ -78,6 +81,5 @@ exclude_from_nav: false
 * [WrapUp]({{ site.baseurl }}/data/notes/Wrapup.pdf) 
     
 
-{% comment %}
   [KNN R script]({{ site.baseurl }}/data/notes/knn.R)
 {% endcomment %}

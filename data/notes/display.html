@@ -43,24 +43,39 @@ div.ib {
     
 <hr>
 
+
 <h2> Comparison between block and inline displays </h2>
 <div class = "color"> Divs are block level by default </div>
 
 <div> Using a <span class = "color">span tag </span> in a div shows that the span tag is inline by default </div>
 
+<hr>
 
-<h2> Two divs using the default block display </h2>
+<p>
+The divs below have the following styles:
+
+<pre>
+div.one {
+	height: 30px;
+	background-color:pink;
+}
+div.two {
+	height: 50px;
+	background-color:lightblue;
+}
+</pre>
+</p>
+<h2> Two divs using the default block display (where height can be changed) </h2>
 
 <div class = "one"> This is div #1 with the default block display </div>
 <div class = "two"> This is div #2 with the default block display </div>
-<hr>
 
 <h2> Two divs using the inline display (Note that the height property is not honored) </h2>
 <div class = "inline one"> This is div #1 with the default block display </div>
 <div class = "inline two"> This is div #2 with the default block display </div>
 
 
-<h2> Two divs using the an inline-block display </h2>
+<h2> Two divs using the an inline-block display (height can be changed)</h2>
 <div class = "ib one"> This is div #1 with the default block display </div>
 <div class = "ib two"> This is div #2 with the default block display </div>
 
