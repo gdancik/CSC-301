@@ -3,10 +3,12 @@ layout: page
 title: Assignments 
 permalink: /assignments/
 order: 3
-exclude_from_nav: true 
+exclude_from_nav: false 
 ---
   
-* [Assignment #1]({{ site.baseurl }}/data/hw/Assignment1.pdf) (Due: Friday, 9/7/18)
+* [Assignment #1]({{ site.baseurl }}/data/hw/Assignment1.pdf) (Due: Wednesday, 01/29/20)
+
+{% comment %}
 * [Assignment #2]({{ site.baseurl }}/data/hw/Assignment2.pdf) (Due: Monday, 9/10/18)
 <hr>
 * [Assignment #3]({{ site.baseurl }}/data/hw/Assignment3.pdf) (Due: Monday, 9/17/18)
@@ -29,3 +31,5 @@ exclude_from_nav: true
 
 <hr style = "height:2px; background-color:blue">
 * [Final Project]({{ site.baseurl }}/data/hw/FinalProject.pdf) (Due dates vary, submit through [Blackboard](http://easternct.blackboard.com))
+
+{% endcomment %}
