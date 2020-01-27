@@ -32,13 +32,21 @@ input[type='text'] {
 }
 
 /* class for each individual button */
-.button {
+.btn-reset {
+	width: 45%;
+	background-color: maroon;
+	color:white;
+	height: 20px;
+}
+
+.btn-submit {
 	width: 45%;
 	background-color: blue;
 	color:white;
 	height: 20px;
 }
 
+.
 
 </style>
 </head>
@@ -47,12 +55,17 @@ input[type='text'] {
 
 
 <h1> Demonstration of "Get" vs. "Post" Form methods </h1>
-<p> For more information, see: <a href = "https://www.w3schools.com/tags/ref_httpmethods.asp"> https://www.w3schools.com/tags/ref_httpmethods.asp </a>
+<p> For more information, see: 
+<ul>
+    <li><a href = "https://www.w3schools.com/html/html_forms.asp"> HTML Forms tutorial </li>
+    <li><a href = "https://www.w3schools.com/tags/ref_httpmethods.asp"> HTTP Request Methods</a>
+</ul>
 </p>
+
 <br>
 <hr>
 <h2> Form with method = "get" </h1>
-<form method = "get" action = "http://bioinformatics.easternct.edu/demo.php">
+<form method = "get" action = "http://bioinformatics.easternct.edu/BCBET2/demo.php">
 
 <div class = "inputs">
 	<label class = "label">Enter any text: </label> 
@@ -61,8 +74,8 @@ input[type='text'] {
 
 <br>
 <div class = "btns">
-	<input type = "Submit" value = "Submit Get Request" class = "button">
-	<input type = "reset" class = "button">
+	<input type = "Submit" value = "Submit Get Request" class = "btn-submit">
+	<input type = "reset" class = "btn-reset">
 </div>
 </form>
 
@@ -71,7 +84,7 @@ input[type='text'] {
 
 
 <h2> Form with method = "post" </h1>
-<form method = "post" action = "http://bioinformatics.easternct.edu/demo.php">
+<form method = "post" action = "http://bioinformatics.easternct.edu/BCBET2/demo.php">
 
 <div class = "inputs">
 	<label class = "label">Enter any text: </label> 
@@ -80,8 +93,8 @@ input[type='text'] {
 
 <br>
 <div class = "btns">
-	<input type = "Submit" value = "Submit Post Request" class = "button">
-	<input type = "reset" class = "button">
+	<input type = "Submit" value = "Submit Post Request" class = "btn-submit">
+	<input type = "reset" class = "btn-reset">
 </div>
 </form>
 
