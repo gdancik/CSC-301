@@ -5,7 +5,6 @@
 <title> CSS Layout Examples </title>
 <style>
 
-	
 .parent {	
 	border: 1px solid black;
 	background-color:aqua;
@@ -18,16 +17,15 @@
 	background-color: lightyellow;
 }
 	
-	.white {
-		background-color:white;
-		padding-top: 5px;
-		padding-bottom: 5px;
-	}
+.white {
+	background-color:white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
 	
 label {
 	color: blue;
-	width: 80px;
-	margin-left:5px;
+	width: 100px;
 	text-align: right;
 }
 
@@ -45,13 +43,20 @@ button {
 
 </style>
 
+<script type="text/javascript" src="position.js"></script>
+
 </head>
 
 
+<body onload = "setup();">
 
-<body>
-
-<br><br><br>
+<h2> Summary of Position Styles</h2>
+<ul>
+	<li> Static (default): Element is positioned based on HTML, and cannot be moved using CSS (e.g., changing 'top' will not change its position</li>
+	<li> Fixed: element has a fixed position which is relative to the viewable window (the viewport); element will stay in place when user scrolls</li>
+	<li> Absolute: Like fixed, but the position is relative to its closest parent with non-static position</li>
+	<li> Relative: Its position is relative to its own static position. Setting position to 'relative' can create a reference point for elements with 'absolute' positions</li>
+</ul>
 
   <div id = "parent" class = "parent">
      This is the parent div which has the following styles: 
@@ -70,7 +75,7 @@ button {
 
 	<br>
 	<div class = "white">
-		<label for = "select-parent"> Parent Div: </label>
+		<label for = "select-parent"> Parent div: </label>
  		<select id = "select-parent" onchange = "changeParentPosition()">
 	  		<option value="static">static (default)</option>
 	 		<option value="fixed">fixed</option>
@@ -82,7 +87,7 @@ button {
  		<button onclick = "resetPosition('parent');">Reset Style</button>
 		<br>
 		<hr>
-		<label for = "select-child"> Child Div:</label>
+		<label for = "select-child"> Child div:</label>
 	 	<select id = "select-child" onchange = "changeChildPosition()">
 	  		<option value="static">static (default)</option>
 		 	<option value="fixed">fixed</option>
@@ -95,87 +100,19 @@ button {
 	
 </div>
 
-<br><br>
-<h2> Summary of Position Styles</h2>
-<ul>
-	<li> Static (default): Element is positioned based on HTML, and cannot be moved using CSS (e.g., changing 'top' will not change its position</li>
-	<li> Fixed: element has a fixed position which is relative to the viewable window (the viewport); element will stay in place when user scrolls</li>
-	<li> Absolute: Like fixed, but the position is relative to its closest parent with non-static position</li>
-	<li> Relative: Its position is relative to its own static position. Setting position to 'relative' can create a reference point for elements with 'absolute' positions</li>
-</ul>
+<h2> Questions </h2>
 
-<br>
-<hr>
-<p> <i>Question:</i> The label width should be 80px for each label. Why isn't this the case? Fix the code so that the width is 80px for each label </p>
-
-<script>
-	
-	
-setInitialStyles();
-updateDisplay();
-
-// sets initial "top" style to "0px" for parent and child divs
-function setInitialStyles() {
-	document.getElementById("parent").style.top = "0px";
-	document.getElementById("child").style.top = "0px";
-	
-}
-	
-// updates the information displayed based on current inline styles
-function updateDisplay() {
-	
-	// Update parent information
-	document.getElementById("parent-position").innerHTML = 
-		"position: " + document.getElementById("parent").style.position;
-	document.getElementById("parent-top").innerHTML = 
-		"top: " + document.getElementById("parent").style.top;
-
-	// Update child information
-	document.getElementById("child-position").innerHTML = 
-		"position: " + document.getElementById("child").style.position;
-	document.getElementById("child-top").innerHTML = 
-		"top: " + document.getElementById("child").style.top;
-	
-}
-
-function changeParentPosition() {
-	parentSelect = document.getElementById('select-parent');
-	document.getElementById("parent").style.position = parentSelect.value;	
-	updateDisplay();
-}
-	
-function changeChildPosition() {
-	childSelect = document.getElementById('select-child');
-	document.getElementById("child").style.position = childSelect.value;	
-	updateDisplay();
-}
-	
-function moveDiv(id, x) {
-	div = document.getElementById(id);
-	topValue = parseInt(div.style.top);
-	div.style.top = (topValue+x)+"px";
-	updateDisplay();	
-}
-
-function resetPosition(id) {
-	div = document.getElementById(id);
-	topValue = parseInt(div.style.top);
-	div.style.top = "0px";
-	div.style.position = "static";
-
-    // update dropdowns
-    document.getElementById("select-parent").value = "static";
-    document.getElementById("select-child").value = "static";
-
-    updateDisplay();
-
-    
-}
-
-	
-	
-</script>
-
+<ol>
+    <li> How do we change the h2 headers to blue? </li> 
+    <li> The width of each label should be 100px. Why isn't this the case? Can you fix the code? </li>
+    <li> Using the form on this page, reposition the divs so that
+        <ul>
+            <li> the parent div is positioned at the top left of the window </li>
+                <li> the child div is at the top left of the parent div, which is at its original position </li>
+            <li> the child div is at the top left of the window, and the parent div is in its original position </li>
+        </ul>
+    </li>
+</ol>
 
 </body>
 

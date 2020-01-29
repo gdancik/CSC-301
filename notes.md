@@ -17,6 +17,8 @@ exclude_from_nav: false
     - Examples:  [display.html]({{ site.baseurl }}/data/notes/display.html) |
 [navbar.html]({{ site.baseurl }}/data/notes/navbar.html) |
 [hide.html]({{ site.baseurl }}/data/notes/hide.html)
+* A closer look at the position property 
+    * [position.html]({{ site.baseurl }}/data/notes/position.html)
 
 {% comment %}
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) <a data-toggle="collapse" data-target="#css">(Click to show/hide examples)</a>
@@ -38,8 +40,6 @@ exclude_from_nav: false
     * [Javascript Objects]({{ site.baseurl }}/data/notes/js_objects.html)
     * [Javascript Inputs]({{ site.baseurl }}/data/notes/js_inputs.html)
 </div>
-* A closer look at the position property 
-    * [position.html]({{ site.baseurl }}/data/notes/position.html)
 * [Javascript Exercises]({{ site.baseurl }}/data/notes/JavascriptExercises.pdf) 
 * [Web Frameworks]({{ site.baseurl }}/data/notes/WebFrameworks.pdf) 
 <a data-toggle="collapse" data-target="#frameworks">(Click to show/hide examples)</a>
