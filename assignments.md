@@ -7,11 +7,11 @@ exclude_from_nav: false
 ---
   
 * [Assignment #1]({{ site.baseurl }}/data/hw/Assignment1.pdf) (Due: Wednesday, 01/29/20)
-* [Assignment #2]({{ site.baseurl }}/data/hw/Assignment2.pdf) (Due: Monday, 02/03/20)
-{% comment %}
 <hr>
-* [Assignment #3]({{ site.baseurl }}/data/hw/Assignment3.pdf) (Due: Monday, 9/17/18)
+* [Assignment #2]({{ site.baseurl }}/data/hw/Assignment2.pdf) (Due: Monday, 02/03/20)
+* [Assignment #3]({{ site.baseurl }}/data/hw/Assignment3.pdf) (Due: Friday, 02/07/20)
     * [registration.html]({{ site.baseurl }}/data/hw/registration.html) 
+{% comment %}
 * [Assignment #4]({{ site.baseurl }}/data/hw/Assignment4.pdf) (Due: Monday, 9/24/18)
     * [links.html]({{ site.baseurl }}/data/hw/links.html) 
     * [buttons.html]({{ site.baseurl }}/data/hw/buttons.html) 
