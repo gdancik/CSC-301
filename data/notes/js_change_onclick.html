@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title> Some Basic Javascript Examples </title>
+
+<style>
+  
+  button {
+	  height: 20px;
+  }
+
+</style>
+
+</head>
+
+<body>
+
+  <h1> Using Javascript to Change a Function </h1>
+
+  <button id = "btnAlert" onclick = "alert('default alert');">Issue Alert</button>
+  <button onclick = "changeAlert();">Change Alert</button>
+
+  <p id = "msg"> Alert setting: default alert message </p>
+
+  <script>
+
+    function newAlert() {
+        alert('new alert');
+    }
+
+    function changeAlert() {
+      btn = document.getElementById('btnAlert');
+
+      // Note: need to assign the function here
+      btn.onclick = newAlert; // assignment of "newAlert();" will not work!
+
+      document.getElementById('msg').innerHTML = 'Alert setting: <span style = "color:red"> alert has been changed </span>';
+    }
+
+    </script>
+
+</body>
+
+</html>
+

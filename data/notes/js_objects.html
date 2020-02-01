@@ -8,38 +8,51 @@
 
 <body>
 
-<h1> Javascript Object Example </h1>
+  <h1> Javascript Object Example </h1>
+  
+  <p> All content below is generated in JavaScript -- see page source for how this is done. </p>
+  <hr> <br>
 
-<script>
+  <script>
 
-    thisCourse = {course: "CSC-360", time: "MWF, 2:00 - 2:50"};
+    
+    document.write('<h3>Accessing elements of an object using the dot operator</h3>');
+    // create an object with course information
+    let thisCourse = {course: 'CSC-301', time: 'MWF, 11:00 - 11:50'};
+    
+    // use the dot operator to access the properties of an object
+    document.write('This course is ' + thisCourse.course + '<br>');
+    document.write('This course meets at the following time: ' + 
+                thisCourse.time);
+    
+    document.write('<h3>Use a loop with <i>in</i> to iterate over properties of an object</h3>');
+    
+    // use for loop with 'in' to iterate over each property of an object
+    for (prop in thisCourse) {
+      document.write(prop + ': ' + thisCourse[prop] + '<br>');
+    }
+      
+    document.write('<h3>Use loop with <i>of</i> to iterate over items in a collection</h3>');
+    
+    document.write("This semester I am teaching the following courses: ");
+    document.write("<ul>");
 
-   
-    document.write("This course is " + thisCourse.course + "<br>");
-    document.write("This course meets at the following time: " + 
-        thisCourse.time + "<br><br>");
-                
-document.write("This semester I am teaching the following courses: ");
-document.write("<ul>");
+    // create an array of objects
+    let myCourses = [ {course: 'CSC-314', time: 'MWF, 1:00 - 1:50'},
+                  {course: 'CSC-450', time: 'MWF, 2:00 - 2:50'}
+                ];
 
-myCourses = [ {course: "CSC-315", time: "MWF, 11:00 - 11:50"} ]; 
-myCourses.push(thisCourse);
-myCourses.push( {course: "CSC-450-01", time: "MW, 4:00 - 5:15"} );
-myCourses.push( {course: "CSC-450-02", time: "MWF, 1:00 - 1:50"} );
+    // add this course
+    myCourses.push(thisCourse);
 
-for (var i = 0; i < myCourses.length; i++) {
-    document.write("<li>" + myCourses[i].course + ": " +
-        myCourses[i].time + "</li>"); 
-}
-document.write("</ul>");
-</script>
-
+    // use for loop with 'of' to iterate over items in a collection
+    for (let myclass of myCourses) {
+      document.write('<li>' + myclass.course + ': ' + myclass.time + '</li>'); 
+    }
+    document.write('</ul>');
+  </script>
 
 </body>
 
 </html>
-
-
-
-
 

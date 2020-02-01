@@ -2,32 +2,69 @@
 <html>
 <head>
 
-<title> Javascript Array Example </title>
+  <title> Javascript Array Example </title>
+
+  <style>
+    .js {
+      background-color: lightblue;
+    }
+  </style>
 
 </head>
 
 <body>
+  <h1> Javascript Array Example </h1>
+  <p> This example uses JavaScript to display a list where each list item is
+      an element of an array. All content in <span id = "blue" class = "js"></span> is generated using JavaScript. 
+  </p>
 
-<h1> Javascript Array Example </h1>
+  <script>
+    document.getElementById('blue').innerHTML = 'blue';
+  </script>
 
-<script>
+  <h3> Example using <i> for...of </i> </h3>
 
-document.write("This semester I am teaching the following courses: ");
-document.write("<ul>");
+  Note that the correct syntax uses <i>of</i> and not <i>in</i>; using <i>in</i> will iterate over all of the properties of an object, and not items in a collection. For more information, see <a href = "https://www.w3schools.com/js/js_loop_for.asp">https://www.w3schools.com/js/js_loop_for.asp</a>. 
 
-classes = ['CSC-315-01', 'CSC-360-05', 'CSC-450-01', 'CSC-450-02']
-for (var i = 0; i < classes.length; i++) {
-    document.write("<li>" + classes[i] + "</li>"); 
-}
-document.write("</ul>");
-</script>
+  <pre><code>
+    for (element of x) {
+        // do something with element
+    }
+  </code></pre>
 
+
+  <script>
+    classes = ['CSC-301', 'CSC-314', 'CSC-450']
+    document.write('<div class = "js">');
+    document.write('This semester I am teaching the following courses: ');
+    document.write('<ul>');
+    for (var course of classes) {
+      document.write('<li>' + course + '</li>'); 
+    }
+    document.write('</ul>');
+    document.write('</div>');
+  </script>
+
+  <h3> Same example using <i> for </i> loop with index </h3>
+
+  <pre><code>
+    for (var i = 0; i &lt x; i++) {
+        // do something with element x[i]
+    }
+  </code></pre>
+
+  <script>
+    document.write('<div class = "js">');
+    document.write('This semester I am teaching the following courses: ');
+    document.write('<ul>');
+    for (var i = 0; i < classes.length; i++) {
+      document.write('<li>' + classes[i] + '</li>'); 
+    }
+    document.write('</ul>');
+    document.write('</div>');
+  </script>
 
 </body>
-
 </html>
-
-
-
 
 

@@ -5,65 +5,88 @@
 <title> Javascript and HTM Inputs </title>
 
 <style>
-.input{
-	display: inline-block;
-	width: 300px;
-}
+  .input{	 
+    
+  }
 	
-#output {
-	border: 1px thin black;
-	background-color:whitesmoke;
-	color:blue;
-	height: 100px;
-	
-}
-	
+  #output {
+	  border: 1px thin black;
+	  background-color:whitesmoke;
+	  color:blue;
+	  height: 100px;
+  }	
 </style>
 
 </head>
 
 <body>
 
-<h1> Some Javascript Examples for Interacting with Inputs </h1>
-
-<div class = "input">
-	This is a checkbox: <input id = "chk" type = "checkbox">
-</div>
-	
-<div class = "input"> 
-	<label for "num">Enter a number: </label>
-	<input id = "num" type = "number">
-</div>
-	
-<button onclick = "submitInfo();"> Submit </button>
-<br>
+  <h1> Some Javascript Examples for Interacting with Inputs </h1>
 
 
-<br><br>
-<div id = "output">  </div>
+  <!-------------------------------------------------------------------
+    When a form's onsubmit returns false, the submission is canceled;
+    otherwise, the values are submitted and the form resets (even if
+    no form action is specified).
+  --------------------------------------------------------------------->
+  <form onsubmit = "return submitInfo();">    
+    
+    <div>
+          
+       <div class = "input">
+	      <label for = "chk">This is a checkbox:</label>
+        <input id = "chk" type = "checkbox">
+      </div>
+	    
+      <div class = "input"> 
+        <label for="num"> Enter a number: </label>
+        <input id = "num" type = "number">	    
+      </div>
+	
+     
+      <div class = "input">
+        <input type = "submit" value = "Submit Values">   
+      </div>
+      
+    </div>
+  </form>
+  
+  <br><br>
+  <div id = "output">  </div>
 
-<script>
+  <script>
 
-// gets intro div by its id, and changes its innerHTML
-function submitInfo() {
-	var checkStatus, numberValue;
+  // gets intro div by its id, and changes its innerHTML
+  function submitInfo() {
+	  let checkStatus, numberValue;
 	
-	// determine if checked box is "checked" or "not checked", and store in checkStatus
+    // get the number entered and store this in numberValue
+    
+	  // determine if checked box is 'checked' or not, and store in checkStatus
 	
-	// get the number entered and store this in numberValue
+	  
 	
+	  let outString = '<br>' + 
+					'the checkbox is: ' + checkStatus + '<br>' +
+				   'the number is: ' + numberValue;
 	
-	var outString = "<br>" + 
-					"the checkbox is: " + checkStatus + "<br>" +
-				   "the number is: " + numberValue;
-	
-	document.getElementById("output").innerHTML = outString;
+	  document.getElementById('output').innerHTML = outString;
+    return false;
 }
 
 </script>
 
 <br><br>
-<i> Exercises: </i> Use Javascript to:
+
+  <i> Exercise 1: </i> Use CSS to:
+  <ul>
+    <li> Display the inputs on the same line </li>
+	  <li> Add 10px of space between each input </li>
+    <li> Alter the button so it has the same height as the numeric input </li>
+  </ul>
+
+  
+  <i> Exercise 2: </i> Use Javascript to:
 <ul>
     <li> Output whether or not the checkbox is checked  </li>
 	<li> Output the number entered </li>
@@ -73,8 +96,4 @@ function submitInfo() {
 </body>
 
 </html>
-
-
-
-
 

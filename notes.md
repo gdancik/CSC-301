@@ -17,8 +17,13 @@ exclude_from_nav: false
     - Examples:  [display.html]({{ site.baseurl }}/data/notes/display.html) |
 [navbar.html]({{ site.baseurl }}/data/notes/navbar.html) |
 [hide.html]({{ site.baseurl }}/data/notes/hide.html)
-* A closer look at the position property 
-    * [position.html]({{ site.baseurl }}/data/notes/position.html)
+* A closer look at the position [position.html]({{ site.baseurl }}/data/notes/position.html) property
+* [JavaScript]({{ site.baseurl }}/data/notes/JavaScript.pdf) 
+    * Examples: [JS Basics]({{ site.baseurl }}/data/notes/js_basics.html) |
+     [JS Array]({{ site.baseurl }}/data/notes/js_array.html) |
+     [JS Objects]({{ site.baseurl }}/data/notes/js_objects.html) |
+     [JS Inputs]({{ site.baseurl }}/data/notes/js_inputs.html) |
+     [JS onclick change]({{ site.baseurl }}/data/notes/js_change_onclick.html) 
 
 {% comment %}
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) <a data-toggle="collapse" data-target="#css">(Click to show/hide examples)</a>

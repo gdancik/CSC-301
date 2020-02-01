@@ -3,107 +3,102 @@
 <head>
 
 <title> Some Basic Javascript Examples </title>
-
+  
 <style>
-.yellow {
-	background-color: yellow;
-}
 
-#intro {
-	border: 2px solid black;
-	padding: 2px;
-}
+  .yellow {
+	  background-color: yellow;
+  }
 
-button {
-	height: 20px;
-}
+  #intro {
+	  border: 2px solid black;
+	  padding: 2px;
+  }
+
+  button {
+	  height: 20px;
+  }
 </style>
 
 </head>
 
 <body>
+  
+  <h1 id = "title"> Some Basic Javascript Examples </h1>
 
-<h1> Some Basic Javascript Examples </h1>
+  <script>
+    document.write('<div id = "intro"> This intro is written \
+					using Javascript </div>');
+  </script>
 
-<script>
-document.write("<div id = 'intro'> This intro is written \
-					using Javascript </div>");
-</script>
-<br><br>
-<button onclick = "changeIntro()">Change Intro Text</button>
-<button onclick = "setIntroClass()">Add Intro Class</button>
-<button onclick = "displayAlert()">Display Alert </button>
-<button onclick = "outputConsole()">Write to console </button>
-<button onclick = "increaseCounter()">Increase Counter </button>
+  <br><br>
+  <button onclick = "changeIntro();">Change Intro Text</button>
+  <button onclick = "setIntroClass();">Add Intro Class</button>
+  <button onclick = "displayAlert();">Display Alert </button>
+  <button onclick = "outputConsole();">Write to console </button>
+  <button onclick = "increaseCounter();">Increase Counter </button>
 
-<br><br>
+  <br><br>
 
-<div id = "output"> </div>
+  <div id = "output"> </div>
 
-<script>
+  <script>
+    // gets intro div by its id, and changes its innerHTML
+    function changeIntro() {
+	    let div = document.getElementById("intro");
+	    div.innerHTML = 'This paragraph has been <span style="color:blue">' + 		
+					'changed</span> using Javascript';
+    }
 
-// gets intro div by its id, and changes its innerHTML
-function changeIntro() {
-	div = document.getElementById("intro");
-	div.innerHTML = "This paragraph has been <span style='color:blue'>" + 		
-					"changed</span> using Javascript";
-}
+    // gets intro div by its id, and sets its className to "yellow"
+    function setIntroClass() {
+	    let div = document.getElementById('intro');
 
-// gets intro div by its id, and sets its className to "yellow"
-function setIntroClass() {
-	div = document.getElementById("intro");
+	    // add "yellow" class
+	    div.classList.add('yellow');
 
-	// add "yellow" class
-	div.classList.add("yellow");
+	    // the code below would replace all classes with the single class "yellow"
+	    //div.className = "yellow";	
+    }
 
-	// the code below would replace all classes with "yellow"
-	//div.className = "yellow";
-	
-}
+    // displays an alert
+    function displayAlert() {
+	    alert('This is an alert');
+    }
 
-function displayAlert() {
-	alert("This is an alert");
-}
+    function outputConsole() {
+	    console.log('This outputs to the console');
+    }
 
-function outputConsole() {
-	console.log("This outputs to the console");
-}
+    var globalCounter = 0;
 
+    function increaseCounter() {
 
-var globalCounter = 0;
+      // since 'functionCounter' is declared in function, it has local scope (let would be better -- why?)
+	  var functionCounter = 0; // since declared in function, has local scope
 
-function increaseCounter() {
+      // increment each counter
+      globalCounter++;
+	    functionCounter++;
+    
+	    output = document.getElementById('output');
+	    output.innerHTML = 'Global Counter: ' + globalCounter + '<br>' +
+            'Function Counter: ' + functionCounter + '<br>';
+      }
+  </script>
 
-	var functionCounter = 0;
-	globalCounter++;
-	functionCounter++;
-	
-	output = document.getElementById("output");
-	output.innerHTML = "Global Counter: " + globalCounter + "<br>" +
-					   "Function Counter: " + functionCounter;
-					   
-					   
-
-}
-
-</script>
-
-<br><br>
-<i> Exercises: </i> Use Javascript to:
-<ul>
+  <br><br>
+  <i> Exercises: </i> Use Javascript to:
+  <ul>
+    <li> Change color of the page heading to red </li>
     <li> Determine how many buttons there are </li>
-    <li> Change the header color to red </li>
-    <li> Look at the children of the first (and only) <i>ui</i> element
-</ul>
-
-
-
+    <li> Click all the buttons </li>
+    <li> Look at the children of the first (and only) <i>ul</i> element </li>
+  </ul>
 
 </body>
 
 </html>
-
-
 
 
 
