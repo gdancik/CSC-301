@@ -11,6 +11,7 @@ exclude_from_nav: false
 <hr>
 * [Assignment #3]({{ site.baseurl }}/data/hw/Assignment3.pdf) (Due: <strike>Friday, 02/07/20</strike> Monday, 02/10/20)
     * [registration.html]({{ site.baseurl }}/data/hw/registration.html) 
+    * [products_js_example.html]({{ site.baseurl }}/data/hw/products_js_example.html) 
 {% comment %}
 * [Assignment #4]({{ site.baseurl }}/data/hw/Assignment4.pdf) (Due: Monday, 9/24/18)
     * [links.html]({{ site.baseurl }}/data/hw/links.html) 
