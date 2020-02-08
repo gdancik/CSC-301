@@ -1,0 +1,88 @@
+<html>
+
+<head>
+  <style>
+    button {
+      height:30px;
+      width: 20%;
+    }
+
+    span {
+        color:red;
+    }
+
+  </style>
+    
+  <script>
+    function hi(outputFunction) {
+      let x = 'hi'
+      outputFunction(x);
+    }
+
+    function myAlert(x) {
+      alert('my alert says: ' + x);
+    }
+    
+    function anonymousHi() {
+      
+      hi(function(x) {
+        alert('anonymous alert says: ' + x);
+      });
+      
+    }
+    
+  </script>
+</head>
+
+<body>
+   
+
+  <h1> Passing a function as a parameter to another function </h1>
+
+  <p> The function <i>hi</i> is a function that has a single parameter -- a function. 
+      The function displays 'hi' according to the specified <i>outputFunction</i>
+      that is passed to the function <i>hi</i>.
+    </p>
+  <pre>  
+   function hi(outputFunction) {
+      let x = 'hi'
+      outputFunction(x);
+    }  
+  </pre>
+
+  
+  <button onclick = "hi(alert);">       Default Alert     </button>
+  <button onclick = "hi(console.log);"> Print to Console  </button>
+  <button onclick = "hi(myAlert);">     My Alert          </button>
+  <button onclick = "anonymousHi();">   Anonymous Hi      </button>
+ 
+  <ul>
+    <li> Clicking the <i>Default Alert</i> button calls <code>hi(alert)</code></li>   
+    <li> Clicking the <i>Print to Console</i> button calls <code>hi(console.log)</code></li>
+    <li> Clicking the <i>My Alert</i> button calls <code>hi(myAlert)</code>, where 
+         <code>myAlert</code> is a user-defined function</li> 
+
+  </ul>
+  <h1> Anonymous functions </h1>
+  <p> An <i> anonymous function</i> is a function that does not have a name </p>
+  <ul>
+    <li> Clicking the <i>Anonymous Hi</i> button calls <i>AnonymousHi</i> which uses an anonymous function:
+    <pre>
+     hi(<span class = "highlight">function(x) {
+        alert('anonymous alert says: ' + x);
+      }</span>);
+    </pre>         
+
+    Note that this is equivalent to <code> hi(<span class = "highlight">myFunction)</span></code>, where
+    <pre>
+     myFunction = <span class = "highlight">function(x) {
+        alert('anonymous alert says: ' + x);
+     }</span>
+    </pre>
+    </li>
+  </ul>
+  
+  
+</body> 
+</html>
+

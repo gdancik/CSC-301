@@ -8,23 +8,39 @@
 <body>
 <script>
 
+// highlight all elements on mouseenter 
 $(document).ready(function(){  
 
-    jQuery("*").mouseenter(function(event) {
+    // Note: "unset" will return a CSS property to its default (inherited) value
+    $("*").mouseenter(function(event) {
         $(this).css("background-color", "yellow")
-        //alert($(this)[0].nodeName);
     });
 
-    jQuery("*").mouseout(function() {
-        $(this).css("background-color", "white")
+    $("*").mouseout(function() {
+        $(this).css("background-color", "unset")
     });
+
+
+    /****************************************************
+    /* Note that the 'hover' function can also be used,
+    /* and has the format:
+
+    /*  $(selector).hover(functionToCallOnMouseEnter, 
+    /*                    functionToCallOnMouseOut)
+
+    /*  $("*").hover(function(){
+    /*       $(this).css("background-color", "yellow");
+    /*     }, function(){
+    /*       $(this).css("background-color", "unset");
+    /*  });
+    *************************************************/
 
 }); 
 
 </script>
 
 
-<h1> Change CSS on mouse enter/exit using jQuery </h1>
+<h1> Change CSS on mouse enter/out using jQuery </h1>
 <div> This is a div 
     <p> This is a paragraph </p>
 </div>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> jQuery example </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<script>
+
+/*
+ When the page loads, we want to set the onclick event for h1 elements to
+    change the background color of the h1 element to yellow.
+ 
+ The 'long' way of doing this is the following.
+
+   // 1) Call the setup function when the page is loaded:
+   $(document).ready(setup);
+
+   // 2) the setup function sets the onclick event for h1 elements
+   //    to call the changeBackground function
+    function setup(){
+        $("h1").click(changeBackground);
+    };
+
+    //3) the changeBackground function changes the background color
+    //   of the current element
+    function changeBackground() {
+        $(this).css("background-color", "yellow");
+    }
+*/
+
+// The preferred way to do this is to use anonymous functions
+$(document).ready(function(){
+    $("h1").click(function(){
+        $(this).css("background-color", "yellow");
+    });
+});
+
+</script>
+
+<body>
+
+
+<h1> jQuery Example </h1>
+
+<p class = "test"> Paragraph 1 with class "test"</p>
+<p> Paragraph 2 with no class</p>
+<p class = "test"> Paragraph 3 with class "test"</p>
+
+<button onclick = "addBorders();"> Add Borders </button>
+
+<script>
+
+function addBorders() {
+    $("p.test").css("border", "solid 1px red");
+
+    // the code below demonstrates that $("p.test") returns an object
+    // containing a collection of elements
+    let paragraphs = $("p.test");
+    for (let p of paragraphs) {
+        console.log(p.innerHTML);
+    }
+}
+</script>
+
+</body>
+</html>
+

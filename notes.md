@@ -24,6 +24,11 @@ exclude_from_nav: false
      [JS Objects]({{ site.baseurl }}/data/notes/js_objects.html) |
      [JS Inputs]({{ site.baseurl }}/data/notes/js_inputs.html) |
      [JS onclick change]({{ site.baseurl }}/data/notes/js_change_onclick.html) 
+* [Web Frameworks]({{ site.baseurl }}/data/notes/WebFrameworks.pdf)
+    * Examples:  
+   [JS functions]({{ site.baseurl }}/data/notes/JS_functions.html) |
+   [jQuery Example #1]({{ site.baseurl }}/data/notes/jquery1.html) |
+   [jQuery Example #2]({{ site.baseurl }}/data/notes/jquery2.html)
 
 {% comment %}
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) <a data-toggle="collapse" data-target="#css">(Click to show/hide examples)</a>
