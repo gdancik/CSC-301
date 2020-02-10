@@ -12,10 +12,10 @@ exclude_from_nav: false
 * [Assignment #3]({{ site.baseurl }}/data/hw/Assignment3.pdf) (Due: <strike>Friday, 02/07/20</strike> Monday, 02/10/20)
     * [registration.html]({{ site.baseurl }}/data/hw/registration.html) 
     * [products_js_example.html]({{ site.baseurl }}/data/hw/products_js_example.html) 
-{% comment %}
-* [Assignment #4]({{ site.baseurl }}/data/hw/Assignment4.pdf) (Due: Monday, 9/24/18)
+* [Assignment #4]({{ site.baseurl }}/data/hw/Assignment4.pdf) (Due: Tuesday, 02/18/20 by 12:00 noon)
     * [links.html]({{ site.baseurl }}/data/hw/links.html) 
     * [buttons.html]({{ site.baseurl }}/data/hw/buttons.html) 
+{% comment %}
 * [Assignment #5]({{ site.baseurl }}/data/hw/Assignment5.pdf) (Due: Monday, 10/08/18)
 * [Assignment #6]({{ site.baseurl }}/data/hw/Assignment6.pdf) (Due: Monday, 10/15/18)
     * [hw6.py]({{ site.baseurl }}/data/hw/hw6.py) 
