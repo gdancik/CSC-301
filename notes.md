@@ -25,12 +25,19 @@ exclude_from_nav: false
      [JS Inputs]({{ site.baseurl }}/data/notes/js_inputs.html) |
      [JS onclick change]({{ site.baseurl }}/data/notes/js_change_onclick.html) 
 * [Web Frameworks]({{ site.baseurl }}/data/notes/WebFrameworks.pdf)
-    * Examples:  
-   [JS functions]({{ site.baseurl }}/data/notes/JS_functions.html) |
+    * Examples:  [JS functions]({{ site.baseurl }}/data/notes/JS_functions.html) |
    [jQuery Example #1]({{ site.baseurl }}/data/notes/jquery1.html) |
    [jQuery Example #2]({{ site.baseurl }}/data/notes/jquery2.html)
-
+* [Chrome Browser Extensions]({{ site.baseurl }}/data/notes/Extensions.pdf) 
+    * Examples:
+    [extension_example_1.zip]({{ site.baseurl }}/data/notes/extension_example_1.zip) |
+    [extension_with_css.zip]({{ site.baseurl }}/data/notes/extension_with_css.zip) |
+    [extension_with_jquery.zip]({{ site.baseurl }}/data/notes/extension_with_jquery.zip)
+    * Asynchronous examples: [asynchronous_example.html]({{ site.baseurl }}/data/notes/asynchronous_example.html) |
+    [callback.html]({{ site.baseurl }}/data/notes/callback.html)
 {% comment %}
+    * [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
+
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) <a data-toggle="collapse" data-target="#css">(Click to show/hide examples)</a>
 <div markdown="1" id = "css" class = "collapse" style = "margin:0px"> 
  - CSS Examples
@@ -60,16 +67,6 @@ exclude_from_nav: false
     * [Angular Basics Example]({{ site.baseurl }}/data/notes/angular_basics.html)
     * [Angular Controller Example]({{ site.baseurl }}/data/notes/angular_controller.html)
 </div>
-* [Chrome Browser Extensions]({{ site.baseurl }}/data/notes/Extensions.pdf) 
-<a data-toggle="collapse" data-target="#scrape">(Click to show/hide examples)</a>
-<div markdown="1" id = "scrape" class = "collapse" style = "margin:0px">
-- Chrome extension examples 
-   * [extension1.zip]({{ site.baseurl }}/data/notes/extension1.zip)
-    * Asynchronous Behavior
-        * [asynchronous_example.html]({{ site.baseurl }}/data/notes/asynchronous_example.html)
-        * [callback.html]({{ site.baseurl }}/data/notes/callback.html)
-    * [extension_with_jquery.zip]({{ site.baseurl }}/data/notes/extension_with_jquery.zip)
-    * [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
 </div>
 * [Python programming basics]({{ site.baseurl }}/data/notes/PythonBasics.zip) 
     * [Python dictionaries]({{ site.baseurl }}/data/notes/dictionary.py) 
