@@ -35,8 +35,8 @@ exclude_from_nav: false
     [extension_with_jquery.zip]({{ site.baseurl }}/data/notes/extension_with_jquery.zip)
     * Asynchronous examples: [asynchronous_example.html]({{ site.baseurl }}/data/notes/asynchronous_example.html) |
     [callback.html]({{ site.baseurl }}/data/notes/callback.html)
+    * Highlighter extension: [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
 {% comment %}
-    * [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
 
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) <a data-toggle="collapse" data-target="#css">(Click to show/hide examples)</a>
 <div markdown="1" id = "css" class = "collapse" style = "margin:0px"> 
