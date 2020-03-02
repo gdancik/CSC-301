@@ -14,10 +14,10 @@ exclude_from_nav: false
 * [Assignment #4]({{ site.baseurl }}/data/hw/Assignment4.pdf) (Due: Tuesday, 02/18/20 by 12:00 noon)
     * [links.html]({{ site.baseurl }}/data/hw/links.html) 
     * [buttons.html]({{ site.baseurl }}/data/hw/buttons.html) 
-<hr style = 'background-color:black; height:1px;'>
 * [Assignment #5]({{ site.baseurl }}/data/hw/Assignment5.pdf) (Due: Monday, 03/02/20)
+<hr style = 'background-color:black; height:1px;'>
+* [Assignment #6]({{ site.baseurl }}/data/hw/Assignment6.pdf) (Due: Friday, 03/06/20)
 {% comment %}
-* [Assignment #6]({{ site.baseurl }}/data/hw/Assignment6.pdf) (Due: Monday, 10/15/18)
     * [hw6.py]({{ site.baseurl }}/data/hw/hw6.py) 
     * [hw6_review.py]({{ site.baseurl }}/data/hw/hw6_review.py) 
 * [Assignment #7]({{ site.baseurl }}/data/hw/Assignment7.pdf) (Due: Monday, 10/22/18)
