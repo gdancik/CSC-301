@@ -36,8 +36,9 @@ exclude_from_nav: false
     * Asynchronous examples: [asynchronous_example.html]({{ site.baseurl }}/data/notes/asynchronous_example.html) |
     [callback.html]({{ site.baseurl }}/data/notes/callback.html)
     * Highlighter extension: [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
-{% comment %}
+* [Python programming basics]({{ site.baseurl }}/data/notes/PythonBasics.zip) 
 
+{% comment %}
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) <a data-toggle="collapse" data-target="#css">(Click to show/hide examples)</a>
 <div markdown="1" id = "css" class = "collapse" style = "margin:0px"> 
  - CSS Examples
@@ -68,7 +69,6 @@ exclude_from_nav: false
     * [Angular Controller Example]({{ site.baseurl }}/data/notes/angular_controller.html)
 </div>
 </div>
-* [Python programming basics]({{ site.baseurl }}/data/notes/PythonBasics.zip) 
     * [Python dictionaries]({{ site.baseurl }}/data/notes/dictionary.py) 
 * [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
 <a data-toggle="collapse" data-target="#scraping">(Click to show/hide examples)</a>
