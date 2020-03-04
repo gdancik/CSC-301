@@ -37,6 +37,7 @@ exclude_from_nav: false
     [callback.html]({{ site.baseurl }}/data/notes/callback.html)
     * Highlighter extension: [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
 * [Python programming basics]({{ site.baseurl }}/data/notes/PythonBasics.zip) 
+* [Advanced programming]({{ site.baseurl }}/data/notes/PythonAdvanced.zip) 
 
 {% comment %}
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) <a data-toggle="collapse" data-target="#css">(Click to show/hide examples)</a>
