@@ -15,6 +15,8 @@ exclude_from_nav: false
     * [links.html]({{ site.baseurl }}/data/hw/links.html) 
     * [buttons.html]({{ site.baseurl }}/data/hw/buttons.html) 
 * [Assignment #5]({{ site.baseurl }}/data/hw/Assignment5.pdf) (Due: Monday, 03/02/20)
+    * [highlighter_logic.html]({{ site.baseurl }}/data/hw/highlighter_logic.html)
+    
 <hr style = 'background-color:black; height:1px;'>
 * [Assignment #6]({{ site.baseurl }}/data/hw/Assignment6.pdf) (Due: Friday, 03/06/20)
 {% comment %}

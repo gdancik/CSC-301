@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Enter search terms</title>
+  </head>
+  
+ 
+  <!-- uncomment to use bootstrap styles -->
+  <!--
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  -->
+
+  <style>
+  
+    input[type=text], #btnHighlight, label{
+      width: 30%;
+    }
+
+    body {
+      margin: 5%;      
+    }
+
+
+    /* TO DO: hide all add buttons and inputs */
+        
+    
+  </style>
+  
+  <script>
+  
+    /*******************************************************
+    * toggleAddButton - displays the add button if the
+    *        input is not empty; otherwise hides it
+    *    num - the number corresponding to the text input 
+    *          and add button
+    *    hideText - if true, hide the text input if there
+    *          is no input
+    *******************************************************/    
+    function toggleAddButton(num, hideText = false) {  
+      textBox = document.getElementById('search' + num);
+      btnAdd = document.getElementById('add' + num);
+    
+      
+      // if text box is empty
+      if (textBox.value == "") {
+        
+        // hide it if hideText is true (but we do not hide the first one)
+        if (hideText && num > 1) {
+          textBox.style.display = 'none';
+        }
+        
+        // hide the add button if it exists
+        if (btnAdd) {
+          btnAdd.style.display = 'none';                
+        }
+        
+      } else {  // otherwise show the button        
+        btnAdd.style.display = 'inline';                
+      }
+      
+    }
+  
+
+    /***************************************************************
+    * addTextBox - displays the text input with id  search + 'num'        
+    ***************************************************************/        
+    function addTextBox(num) {      
+      document.getElementById('search' + num).style.display = 'inline';
+    }
+     
+           
+    // set event handlers after DOM is loaded (required approach for extensions)
+    document.addEventListener('DOMContentLoaded', function() {
+            
+      /************************************************************
+       * click event for Highlight button
+       ************************************************************/
+
+      document.getElementById("btnHighlight").addEventListener("click",
+          function() {
+                      
+            qry1 = document.getElementById('search1').value;
+            qry2 = document.getElementById('search2').value;
+            qry3 = document.getElementById('search3').value;
+        
+            alert(qry1 + '\n' + qry2 + '\n' + qry3 );
+        
+            // TO DO: create a codeString that creates an array of qry values
+            // We can test this using the 'eval' function to evaluate a codeString 
+            //     (in an extension, we'd use chrome.tabs.executeScript())
+        
+                    
+               
+          }
+      );
+      
+      
+      /************************************************************
+       * keyup events to show add button
+       ************************************************************/
+      
+      // handle keyup event for first input
+      document.getElementById('search1').addEventListener("keyup", 
+            function() {
+                toggleAddButton(1);
+            }
+      );
+      
+      // handle keyup event for second input
+      document.getElementById('search2').addEventListener("keyup", 
+            function() {
+                toggleAddButton(2);
+            }
+      );
+      
+      
+      /************************************************************
+       * blur events to hide text box if empty when we lose focus
+       ************************************************************/
+      
+      // handle blur event for second input   
+      document.getElementById('search2').addEventListener("blur", 
+            function() {
+                toggleAddButton(2, true);
+            }
+      );
+
+      
+      // handle blur event for third input
+      document.getElementById('search3').addEventListener("blur", 
+            function() {
+                toggleAddButton(3, true);
+            }
+      );
+      
+      
+      /************************************************************
+       * click events to add text boxes
+       ************************************************************/
+                  
+       // handle click event for 1st add button
+      document.getElementById('add1').addEventListener("click", 
+            function() {
+                addTextBox(2);
+            }
+      );
+      
+      // handle click event for 2nd add button
+      document.getElementById('add2').addEventListener("click", 
+            function() {
+                addTextBox(3);
+            }
+      );            
+      
+    });
+      
+     
+      
+  </script>
+
+  <body>
+      <h2> Enter a search term that you wish to highlight</h2>
+
+      <label for = "search1">Enter your search term(s): </label>          
+
+    <div>
+    <input type="text" style = "display:inline" id="search1" 
+           placeholder = "Enter a search term">
+    <button id = "add1" class = "add">+</button>   
+    </div>
+    
+    <div>
+    <input type="text" id="search2" placeholder = "Enter a search term">
+    <button id = "add2" class = "add">+</button>   
+    </div>
+    
+    <div>
+    <input type="text" id="search3" placeholder = "Enter a search term">
+    </div>
+    
+    <br>
+    <button id="btnHighlight" class = "btn-primary">Highlight!</button>
+      
+  </body>
+</html>
+
