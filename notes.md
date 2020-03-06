@@ -38,6 +38,8 @@ exclude_from_nav: false
     * Highlighter extension: [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
 * [Python programming basics]({{ site.baseurl }}/data/notes/PythonBasics.zip) 
 * [Advanced programming]({{ site.baseurl }}/data/notes/PythonAdvanced.zip) 
+* [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
+    * [webscraping.zip]({{ site.baseurl }}/data/notes/webscraping.zip)
 
 {% comment %}
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) <a data-toggle="collapse" data-target="#css">(Click to show/hide examples)</a>
@@ -71,15 +73,6 @@ exclude_from_nav: false
 </div>
 </div>
     * [Python dictionaries]({{ site.baseurl }}/data/notes/dictionary.py) 
-* [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
-<a data-toggle="collapse" data-target="#scraping">(Click to show/hide examples)</a>
-<div markdown="1" id = "scraping" class = "collapse" style = "margin:0px">
-- Web Scraping Examples
-    * [Schedule.html]({{ site.baseurl }}/data/notes/schedule.html) 
-    * [Web Scraping Demo]({{ site.baseurl }}/data/notes/WebScrapingDemo.py) 
-    * [RequestsAndScraping]({{ site.baseurl }}/data/notes/RequestsAndScraping.py) 
-    * [WeatherScraper]({{ site.baseurl }}/data/notes/WeatherScraper.py) 
-</div>
 * [Selenium Example]({{ site.baseurl }}/data/notes/selenium_ex.py) 
     * [Unit Testing Example]({{ site.baseurl }}/data/notes/unittest_ex.py) 
 * JSON and Web APIs
