@@ -17,12 +17,12 @@ exclude_from_nav: false
 * [Assignment #5]({{ site.baseurl }}/data/hw/Assignment5.pdf) (Due: Monday, 03/02/20)
     * [highlighter_logic.html]({{ site.baseurl }}/data/hw/highlighter_logic.html)
     
-<hr style = 'background-color:black; height:1px;'>
 * [Assignment #6]({{ site.baseurl }}/data/hw/Assignment6.pdf) (Due: Friday, 03/06/20)
+<hr style = 'background-color:black; height:1px;'>
+* [Assignment #7]({{ site.baseurl }}/data/hw/Assignment7.pdf) (Due: Wednesday, 03/25/20)
 {% comment %}
     * [hw6.py]({{ site.baseurl }}/data/hw/hw6.py) 
     * [hw6_review.py]({{ site.baseurl }}/data/hw/hw6_review.py) 
-* [Assignment #7]({{ site.baseurl }}/data/hw/Assignment7.pdf) (Due: Monday, 10/22/18)
 * [Assignment #8]({{ site.baseurl }}/data/hw/Assignment8.pdf) (Due: Friday, 11/09/18)
     * [Number Cruncher web page]({{ site.baseurl }}/data/hw/number_cruncher.html)
     * [Number Cruncher Unit Test]({{ site.baseurl }}/data/hw/TestNumberCruncher.py) 
