@@ -18,14 +18,12 @@ exclude_from_nav: false
     * [highlighter_logic.html]({{ site.baseurl }}/data/hw/highlighter_logic.html)
     
 * [Assignment #6]({{ site.baseurl }}/data/hw/Assignment6.pdf) (Due: Friday, 03/06/20)
-<hr style = 'background-color:black; height:1px;'>
 * [Assignment #7]({{ site.baseurl }}/data/hw/Assignment7.pdf) (Due: Wednesday, 03/25/20)
-{% comment %}
-    * [hw6.py]({{ site.baseurl }}/data/hw/hw6.py) 
-    * [hw6_review.py]({{ site.baseurl }}/data/hw/hw6_review.py) 
-* [Assignment #8]({{ site.baseurl }}/data/hw/Assignment8.pdf) (Due: Friday, 11/09/18)
+<hr style = 'background-color:black; height:1px;'>
+* [Assignment #8]({{ site.baseurl }}/data/hw/Assignment8.pdf) (Due: Friday, 04/03/20)
     * [Number Cruncher web page]({{ site.baseurl }}/data/hw/number_cruncher.html)
-    * [Number Cruncher Unit Test]({{ site.baseurl }}/data/hw/TestNumberCruncher.py) 
+    * [Number Cruncher Unit Test]({{ site.baseurl }}/data/hw/TestNumberCruncher.ipynb) 
+{% comment %}
 * [Assignment #9]({{ site.baseurl }}/data/hw/Assignment9.pdf) (Due: Monday, 11/12/18)
 * Assignment #10
     * [Assignment #10A]({{ site.baseurl }}/data/hw/swirl.pdf) (not collected)
