@@ -40,7 +40,8 @@ exclude_from_nav: false
 * [Advanced programming]({{ site.baseurl }}/data/notes/PythonAdvanced.zip) 
 * [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
     * [webscraping.zip]({{ site.baseurl }}/data/notes/webscraping.zip)
-
+* [Selenium Example]({{ site.baseurl }}/data/notes/selenium_example.ipynb) 
+    * [Unit Testing Example]({{ site.baseurl }}/data/notes/unittest_example.ipynb) 
 {% comment %}
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) <a data-toggle="collapse" data-target="#css">(Click to show/hide examples)</a>
 <div markdown="1" id = "css" class = "collapse" style = "margin:0px"> 
