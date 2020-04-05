@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #name {
+          border: solid 1px blue;
+          position: fixed;
+          padding: 10px;
+          top: 5%;
+          right: 5%;
+      }
+
+      label {
+          display:inline-block;
+          width: 100px;
+      }
+    </style>
+
+  </head>
+
+  </head>
+    
+<body onload = "readFromLocalStorage();">
+
+<h1> Working with JSON (Javascript Object Notation) Objects </h1>
+
+JSON is a data interchange format for storing objects. JSON is language-independent, but is derived from JavaScript. Using JavaScript, we can do the following: 
+
+<ul>  
+    <li> Use JSON.stringify(x) to convert object 'x' into a JSON (string) format </li>
+
+    <li> Use JSON.parse(x) to convert the JSON object 'x' into a javascript object </li>
+    <li> JSON is used to store objects in <i> local storage</i>:
+    <ul>
+        <li> Use localStorage.setItem("key", x) to save the JSON object 'x' to local storage</li> 
+            <li> Use localStorage.getItem("key") to read the key (in JSON format) from local storage </li>
+    </ul>
+</ul>
+For more information see <a href = "https://www.w3schools.com/js/js_json_intro.asp">https://www.w3schools.com/js/js_json_intro.asp</a>
+
+
+
+
+<h3> Example 1 (View source code to see how JSON.stringify if used)</h3>
+<p>
+JS code for creating <i>mycourse</i> object:
+<pre>
+var mycourse = { course: "CSC 301", time: "MWF, 11:00 - 11:50" };
+</pre>
+
+<script>
+var mycourse = { course: 'CSC 301', time: 'MWF, 11:00 - 11:50' };
+json_mycourse = JSON.stringify(mycourse);
+document.write('Output <i>mycourse</i> in JSON format: ' + json_mycourse);
+</script>
+
+</p>
+
+<h3> Example 2 (View source code to see how JSON.stringify is used)</h3>
+
+<p>
+JS code for creating <i>prof</i> object:
+<pre>
+var prof = { firstName: 'Garrett', lastName: 'Dancik', 
+             classes: ['CSC 301', 'CSC 314', 'CSC 450']};
+</pre>
+
+<script>
+var prof = { firstName: 'Garrett', lastName: 'Dancik', 
+             classes: ['CSC 301', 'CSC 314', 'CSC 450']};
+json_prof = JSON.stringify(prof);
+document.write("Output <i>prof</i> in JSON format: " + json_prof);
+</script>
+</p>
+
+<h3> Example 3 </h3>
+
+Wikipedia has an API that returns page titles and the first paragraph of an entry in JSON format, e.g., <a href = 'https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&origin=*&titles=Eastern Connecticut State University'>Eastern Connecticut State University </a>
+  
+
+<h3> Example 4 </h3>
+<form onsubmit = 'saveName();'>
+    <label for = 'first'>First Name: </label>
+    <input id = 'first' type = 'text' required> <br>
+    <label for = 'last'>Last Name:  </label>
+    <input id = 'last' type = 'text' required> 
+    <br><br>
+    <input type = "submit" value = "Submit"> 
+    <input id = 'btnReset' type = "reset">
+</form>
+
+
+<script>
+
+function saveName() {
+    var firstName = document.getElementById('first').value.trim();
+    var lastName = document.getElementById('last').value.trim();
+
+    if (firstName == '' || lastName == '') {
+        return;
+    }
+
+    // create person object
+    var person = {first: firstName, last: lastName};
+
+    // convert person to JSON string and store in local storage 
+    var personStr = JSON.stringify(person);
+    localStorage.setItem("name", personStr);
+
+    readFromLocalStorage();
+
+    return true;
+
+}
+
+function readFromLocalStorage() {
+    //Retrieving data:
+    var storedNameString = localStorage.getItem("name");
+
+    if (storedNameString) {
+        var storedName = JSON.parse(storedNameString);
+
+        msg = 'Welcome ' + storedName.first + ' ' + storedName.last;
+        msg += '<br><a href = "#" onclick = "signOut();">Sign out</a>';
+
+    } else {
+        msg = 'Welcome guest';
+    }
+    
+    document.getElementById("name").innerHTML = msg;
+}
+
+function signOut() {
+    localStorage.removeItem('name');
+    readFromLocalStorage();
+    document.getElementById('btnReset').click();
+    alert('You are now signed out');
+}
+
+</script>
+
+<div id="name"></div>
+
+</body>
+</html>
+
+

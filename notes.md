@@ -42,6 +42,10 @@ exclude_from_nav: false
     * [webscraping.zip]({{ site.baseurl }}/data/notes/webscraping.zip)
 * [Selenium Example]({{ site.baseurl }}/data/notes/selenium_example.ipynb) 
     * [Unit Testing Example]({{ site.baseurl }}/data/notes/unittest_example.ipynb) 
+* JSON and Web APIs
+    * [json_example.html]({{ site.baseurl }}/data/notes/json_example.html) |
+     [pokemon_api.html]({{ site.baseurl }}/data/notes/pokemon_api.html) |
+     [JSON in Python]({{ site.baseurl }}/data/notes/JSON_objects_in_Python.ipynb) 
 {% comment %}
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) <a data-toggle="collapse" data-target="#css">(Click to show/hide examples)</a>
 <div markdown="1" id = "css" class = "collapse" style = "margin:0px"> 

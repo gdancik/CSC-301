@@ -1,11 +1,27 @@
 <!DOCTYPE html>
+
+<! ----------------------------------------------------------------
+Note: Here we use the XMLHttpRequest object to request data from
+another page; in many cases (though not here), cross-domain 
+requests are restricted. For information about how to handle 
+cross-origin resource sharing (CORS) requests, see
+https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9
+-------------------------------------------------------------------->
+
 <html>
 <body>
 
 <h2>PokeAPI Example</h2>
+
+<p>
+Clicking the button will make a request to the PokeAPI, which returns data in JSON format. That data is then parsed and displayed on this page. Clicking the button will make a request to the following page: <a href = "https://pokeapi.co/api/v2/pokemon/1/">https://pokeapi.co/api/v2/pokemon/1/</a>.
+</p>
+
+<p>
 <button type="button" onclick="getInfo()">Get Info from PokeAPI</button>
 <br><br>
 <div id="info"></div>
+</p>
 
 <script>
 var record;
@@ -14,24 +30,33 @@ function getInfo() {
 
     var xhttp = new XMLHttpRequest();
 
-    // since Javascript is asynchronous, we respond to a state change event for the request
+    // since Javascript is asynchronous, we respond to a state change event for the request by 
+    // defining a function and assigning it to 'xhttp.onreadystatechange'.
     xhttp.onreadystatechange = function() {
         // if request is successful
         if (this.readyState == 4 && this.status == 200) {
             recordStr = this.responseText; // JSON format
+            localStorage.setItem('pokemon', recordStr);
+
             record = JSON.parse(recordStr);
             msg = "Name: " + record.name + "<br>Abilities: ";
+
+            // for each ability, add its name to the string
             for (var i = 0; i < record.abilities.length; i++) {
                 msg += record.abilities[i].ability.name;
                 if (i + 1 != record.abilities.length) {
                     msg += ", ";
                 }
             }
+
+            // set the innerHTML of the "info" div
             document.getElementById("info").innerHTML = msg;
         }
     }
-        xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/1/", true);
-        xhttp.send();
+
+    // submit a 'get' request to the pokeapi; 'true' is used to make the request asynchronously
+    xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/1/", true);
+    xhttp.send();
 };
 </script>
 
