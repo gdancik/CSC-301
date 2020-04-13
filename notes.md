@@ -6,6 +6,14 @@ order: 2
 exclude_from_nav: false
 ---
 
+<style>
+.hide {
+  display:none
+}
+
+</style>
+
+<div id = 'hidden' class = 'hide' markdown="1">
 * [Course Introduction]({{ site.baseurl }}/data/notes/Intro.pdf)
     * [Example web page]({{ site.baseurl }}/data/notes/example.html)
 * [HTML Tags]({{ site.baseurl }}/data/notes/HTML.pdf) 
@@ -38,6 +46,9 @@ exclude_from_nav: false
     * Highlighter extension: [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
 * [Python programming basics]({{ site.baseurl }}/data/notes/PythonBasics.zip) 
 * [Advanced programming]({{ site.baseurl }}/data/notes/PythonAdvanced.zip) 
+</div>
+
+
 * [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
     * [webscraping.zip]({{ site.baseurl }}/data/notes/webscraping.zip)
 * [Selenium Example]({{ site.baseurl }}/data/notes/selenium_example.ipynb) 
@@ -45,7 +56,26 @@ exclude_from_nav: false
 * JSON and Web APIs
     * [json_example.html]({{ site.baseurl }}/data/notes/json_example.html) |
      [pokemon_api.html]({{ site.baseurl }}/data/notes/pokemon_api.html) |
-     [JSON in Python]({{ site.baseurl }}/data/notes/JSON_objects_in_Python.ipynb) 
+     [JSON in Python]({{ site.baseurl }}/data/notes/JSON_objects_in_Python.ipynb)
+* R Programming ([R-intro.R]({{ site.baseurl }}/data/notes/R-intro.R) |
+                [dataframes.R]({{ site.baseurl }}/data/notes/dataframes.R))
+
+
+<br><br>
+<center>
+<div id = 'clicker'>
+<a href = '#' style='font-size:120%' onclick = 'viewAll();'>Click to view all notes</a>   
+<script>
+function viewAll() {
+    document.getElementById('hidden').classList.remove('hide');
+    document.getElementById('clicker').classList.add('hide');
+}
+</script>
+
+
+</div>
+</center>
+        
 {% comment %}
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) <a data-toggle="collapse" data-target="#css">(Click to show/hide examples)</a>
 <div markdown="1" id = "css" class = "collapse" style = "margin:0px"> 
