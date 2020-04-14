@@ -1,6 +1,12 @@
 # Shiny is an R package for developing interactive web pages
 # https://shiny.rstudio.com/
 
+# See examples in the shiny gallery: https://shiny.rstudio.com/gallery/
+
+# Real world examples:
+#   - https://www.letsrun.com/shoes
+#   - http://freerangestats.info/blog/2018/05/13/nz-govt-shinyapps
+
 # To create a web application using shiny, we will create a UI
 # (user interface) and server. 
 
@@ -22,15 +28,14 @@ p(id = "intro", "This is a blue paragraph", style = "color: blue")
 # this does not work for specifying inner HTML
 p("This paragraph contains a <span style='color:blue'>blue word</span>")
 
-
-# but this does
+# use the HTML function to specify a string that contains HTML tags
 HTML("<p>This paragraph contains a <span style='color:blue'>blue word</span></p>")
 
-# create a header
+# create an h1 header
 h1("This is a header")
 
 # create a dropdown
-selectInput("inputID", label = "Select a Number:", choices = 1:10)
+selectInput("inputID", label = "Select a Number:", choices = 1:3)
 
 
 # add side-by-side columns using bootstrap
@@ -39,8 +44,3 @@ fluidRow(
     column(width = 6, p("column 2A"))
 )
   
-
-# Let's look at an example:
-# https://shiny.rstudio.com/gallery/telephones-by-region.html
-
-
