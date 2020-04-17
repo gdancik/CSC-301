@@ -24,7 +24,7 @@ exclude_from_nav: false
     * [Number Cruncher Unit Test]({{ site.baseurl }}/data/hw/TestNumberCruncher.ipynb) 
 * [Assignment #9]({{ site.baseurl }}/data/hw/Assignment9.pdf) (Due: Monday, 04/13/20)
 <hr style = 'background-color:black; height:1px;'>
-* [Assignment 10]({{ site.baseurl }}/data/hw/babyNames.R) (Due: Friday, 04/24/20; submit through [Blackboard](http://easternct.blackboard.com))
+* [Assignment 10]({{ site.baseurl }}/data/hw/babynames.zip) (Due: Friday, 04/24/20; submit through [Blackboard](http://easternct.blackboard.com))
 * [Final Project]({{ site.baseurl }}/data/hw/FinalProject.pdf) (Due dates vary, submit through [Blackboard](http://easternct.blackboard.com))
 {% comment %}
 * Assignment #10
