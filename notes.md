@@ -62,6 +62,7 @@ exclude_from_nav: false
 * Shiny ([shiny.R]({{ site.baseurl }}/data/notes/shiny.R) |
         [telephones.zip]({{ site.baseurl }}/data/notes/telephones.zip))
 * Webscraping in R ([rvest.R]({{ site.baseurl }}/data/notes/rvest.R))
+* [WrapUp]({{ site.baseurl }}/data/notes/Wrapup.pdf) 
 
 <br><br>
 <center>
@@ -119,7 +120,6 @@ function viewAll() {
 * [R/Shiny]({{ site.baseurl }}/data/notes/R.pdf) 
     * [rvest example]({{ site.baseurl }}/data/notes/rvest.R) 
     * [shiny overview]({{ site.baseurl }}/data/notes/shiny.R) 
-* [WrapUp]({{ site.baseurl }}/data/notes/Wrapup.pdf) 
     
 
   [KNN R script]({{ site.baseurl }}/data/notes/knn.R)
