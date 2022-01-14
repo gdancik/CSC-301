@@ -14,10 +14,14 @@ exclude_from_nav: false
 </style>
 
 <div id = 'hidden' class = 'hide' markdown="1">
+</div>
+
 * [Course Introduction]({{ site.baseurl }}/data/notes/Intro.pdf)
     * [Example web page]({{ site.baseurl }}/data/notes/example.html)
 * [HTML Tags]({{ site.baseurl }}/data/notes/HTML.pdf) 
     * [example]({{ site.baseurl }}/data/notes/tags.html)
+
+{% comment %}
 - Form examples
     - Examples: [forms.html]({{ site.baseurl }}/data/notes/forms.html) |
     [demo.php]({{ site.baseurl }}/data/notes/demo.php)
@@ -47,6 +51,7 @@ exclude_from_nav: false
 * [Python programming basics]({{ site.baseurl }}/data/notes/PythonBasics.zip) 
 * [Advanced programming]({{ site.baseurl }}/data/notes/PythonAdvanced.zip) 
 </div>
+
 
 
 * [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
@@ -79,7 +84,6 @@ function viewAll() {
 </div>
 </center>
         
-{% comment %}
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) <a data-toggle="collapse" data-target="#css">(Click to show/hide examples)</a>
 <div markdown="1" id = "css" class = "collapse" style = "margin:0px"> 
  - CSS Examples
@@ -120,7 +124,5 @@ function viewAll() {
 * [R/Shiny]({{ site.baseurl }}/data/notes/R.pdf) 
     * [rvest example]({{ site.baseurl }}/data/notes/rvest.R) 
     * [shiny overview]({{ site.baseurl }}/data/notes/shiny.R) 
-    
 
-  [KNN R script]({{ site.baseurl }}/data/notes/knn.R)
 {% endcomment %}

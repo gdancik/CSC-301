@@ -6,7 +6,7 @@
 
 <body id = "id_body">
 
-<h1 id = 'heading'> Example demonstrating basic HTML/CSS/Javascript concepts </h1>
+<h1 id = "heading"> Example demonstrating basic HTML/CSS/Javascript concepts </h1>
 
 <p> This is a paragraph of text. Can you change the background of this text to yellow? When the user clicks the Change Color button, can you change the heading color to red?</p>
 
@@ -16,7 +16,7 @@
 function changeColor() {
     var body = document.getElementById("id_body");
     var btn = document.getElementById("btn_change");
-    var color = "lightblue";
+    var color = "yellow";
     var btnLabel = "Reset";
     if (btn.innerHTML == "Reset") {
         btnLabel = "Change Background Color";
@@ -29,3 +29,5 @@ function changeColor() {
 </script>
 
 </body>
+
+</html>
