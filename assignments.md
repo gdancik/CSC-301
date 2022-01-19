@@ -3,10 +3,11 @@ layout: page
 title: Assignments 
 permalink: /assignments/
 order: 3
-exclude_from_nav: true 
+exclude_from_nav: false 
 ---
   
-* [Assignment #1]({{ site.baseurl }}/data/hw/Assignment1.pdf) (Due: Wednesday, 01/29/20)
+* [Assignment #1]({{ site.baseurl }}/data/hw/Assignment1.pdf) (Due: Friday, 01/28/22)
+{% comment %}
 * [Assignment #2]({{ site.baseurl }}/data/hw/Assignment2.pdf) (Due: Monday, 02/03/20)
 * [Assignment #3]({{ site.baseurl }}/data/hw/Assignment3.pdf) (Due: <strike>Friday, 02/07/20</strike> Monday, 02/10/20)
     * [registration.html]({{ site.baseurl }}/data/hw/registration.html) 
@@ -28,7 +29,6 @@ exclude_from_nav: true
 * [Final Project]({{ site.baseurl }}/data/hw/FinalProject.pdf) (Due dates vary, submit through [Blackboard](http://easternct.blackboard.com))
     * [Need Ideas?]({{ site.baseurl }}/data/hw/Ideas.pdf) 
 
-{% comment %}
 * Assignment #10
     * [Assignment #10A]({{ site.baseurl }}/data/hw/swirl.pdf) (not collected)
 
