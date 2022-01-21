@@ -23,8 +23,9 @@ exclude_from_nav: false
 * Form examples
     * Examples: [forms.html]({{ site.baseurl }}/data/notes/forms.html) |
     [demo.php]({{ site.baseurl }}/data/notes/demo.php)
-{% comment %}
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) 
+    - Examples: [css_example.html]({{ site.baseurl }}/data/notes/css_example.html)
+{% comment %}
     - Examples:  [display.html]({{ site.baseurl }}/data/notes/display.html) |
 [navbar.html]({{ site.baseurl }}/data/notes/navbar.html) |
 [hide.html]({{ site.baseurl }}/data/notes/hide.html)
