@@ -20,11 +20,10 @@ exclude_from_nav: false
     * [Example web page]({{ site.baseurl }}/data/notes/example.html)
 * [HTML Tags]({{ site.baseurl }}/data/notes/HTML.pdf) 
     * [example]({{ site.baseurl }}/data/notes/tags.html)
-
-{% comment %}
-- Form examples
-    - Examples: [forms.html]({{ site.baseurl }}/data/notes/forms.html) |
+* Form examples
+    * Examples: [forms.html]({{ site.baseurl }}/data/notes/forms.html) |
     [demo.php]({{ site.baseurl }}/data/notes/demo.php)
+{% comment %}
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) 
     - Examples:  [display.html]({{ site.baseurl }}/data/notes/display.html) |
 [navbar.html]({{ site.baseurl }}/data/notes/navbar.html) |
