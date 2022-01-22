@@ -7,8 +7,8 @@ exclude_from_nav: false
 ---
   
 * [Assignment #1]({{ site.baseurl }}/data/hw/Assignment1.pdf) (Due: Friday, 01/28/22)
+* [Assignment #2]({{ site.baseurl }}/data/hw/Assignment2.pdf) (Due: Monday, 01/31/22)
 {% comment %}
-* [Assignment #2]({{ site.baseurl }}/data/hw/Assignment2.pdf) (Due: Monday, 02/03/20)
 * [Assignment #3]({{ site.baseurl }}/data/hw/Assignment3.pdf) (Due: <strike>Friday, 02/07/20</strike> Monday, 02/10/20)
     * [registration.html]({{ site.baseurl }}/data/hw/registration.html) 
     * [products_js_example.html]({{ site.baseurl }}/data/hw/products_js_example.html) 
