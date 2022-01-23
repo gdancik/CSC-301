@@ -56,6 +56,15 @@ input[type='text'] {
 
 
 <h1> Demonstration of "Get" vs. "Post" Form methods </h1>
+
+<div>
+    Note the following: 
+    <ul>
+        <li> A <i>form</i> element is used to group together inputs that get submitted or reset when the <i>submit</i> or <i>reset</i> buttons are clicked.</i>
+        <li> The <i>label</i> element is used to associate a label with a specific input. In this case, clicking on the label will give focus to the input (compare clicking on the labels for both text boxes; only the first one is set up this way). In addition, screen readers will read the label for an input when the input has focus. </li>
+    </ul>
+</div>
+
 <p> For more information, see: 
 <ul>
     <li><a href = "https://www.w3schools.com/html/html_forms.asp"> HTML Forms tutorial </li>
@@ -69,13 +78,13 @@ input[type='text'] {
 <form method = "get" action = "http://gd-test-php.000webhostapp.com/demo.php">
 
 <div class = "inputs">
-	<label class = "label">Enter any text: </label> 
-	<input type = "text" name = "txt" maxlength = "50"> </input>
+	<label class = "label" for = "get_txt">Enter any text: </label> 
+	<input type = "text" name = "txt" id = "get_txt" maxlength = "50"> </input>
 </div>
 
 <br>
 <div class = "btns">
-	<input type = "Submit" value = "Submit Get Request" class = "btn-submit">
+	<input type = "submit" value = "Submit Get Request" class = "btn-submit">
 	<input type = "reset" class = "btn-reset">
 </div>
 </form>
@@ -94,7 +103,7 @@ input[type='text'] {
 
 <br>
 <div class = "btns">
-	<input type = "Submit" value = "Submit Post Request" class = "btn-submit">
+	<input type = "submit" value = "Submit Post Request" class = "btn-submit">
 	<input type = "reset" class = "btn-reset">
 </div>
 </form>
