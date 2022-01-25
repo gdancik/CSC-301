@@ -24,11 +24,10 @@ exclude_from_nav: false
     * Examples: [forms.html]({{ site.baseurl }}/data/notes/forms.html) |
     [demo.php]({{ site.baseurl }}/data/notes/demo.php)
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) 
-    - Examples: [css_example.html]({{ site.baseurl }}/data/notes/css_example.html)
-{% comment %}
-    - Examples:  [display.html]({{ site.baseurl }}/data/notes/display.html) |
+    - Examples: [css_example.html]({{ site.baseurl }}/data/notes/css_example.html) | [display.html]({{ site.baseurl }}/data/notes/display.html) |
 [navbar.html]({{ site.baseurl }}/data/notes/navbar.html) |
 [hide.html]({{ site.baseurl }}/data/notes/hide.html)
+{% comment %}
 * A closer look at the position [position.html]({{ site.baseurl }}/data/notes/position.html) property
 * [JavaScript]({{ site.baseurl }}/data/notes/JavaScript.pdf) 
     * Examples: [JS Basics]({{ site.baseurl }}/data/notes/js_basics.html) |

@@ -2,6 +2,8 @@
 <html>
 <head>
 
+<title> CSS Navbar </title>
+
 <style>
 
   ul.horizontal li {
@@ -10,11 +12,14 @@
   }
 
   ul.navbar {
-    list-style-type: none;
     margin: 0;
     padding: 0;	
     background-color: rgb(0, 38, 73);    
-   
+  }
+
+  ul.navbar li {
+    list-style-type: none;
+  	display:inline-block;	
   }
 
   ul.navbar li a {			
@@ -35,16 +40,20 @@
 
 <body>
 
-<h2> Unordered list, no styles </h2>
+<p> This page demonstrates how we can create a navigation bar using CSS. For more examples, see <a href = "https://www.w3schools.com/css/css_navbar.asp">https://www.w3schools.com/css/css_navbar.asp</a></p>
+
+
+<h2> Start with an unordered list, with no styles </h2>
 
 <ul>
-  <li> <a href = "#">Page 1</a> </li>
-  <li> <a href = "#">Page 2</a> </li>
-  <li> <a href = "#">Page 3</a> </li>
+    <li> <a href = "#">Page 1</a> </li>
+    <li> <a href = "#">Page 2</a> </li>
+    <li> <a href = "#">Page 3</a> </li>
 </ul>
+
 <hr><br>
 
-<h2> Horizontal style, remove bullets and use inline-block display </h2>
+<h2> To get a horizontal style, remove bullets and use an inline-block display </h2>
 <pre>
   ul.horizontal li {
     list-style-type: none;
@@ -59,15 +68,23 @@
 </ul>
 <br><hr><br>
 
-<h2> Navbar style, add padding to links and change color </h2>
+<h2> For a navbar style, add padding to links and change color </h2>
 <pre>
+
+  /* remove margin and padding and color the navbar */
   ul.navbar {
-    list-style-type: none;
     margin: 0;
     padding: 0;	
     background-color: rgb(0, 38, 73);    
   }
 
+  /* style the navbar list items */
+  ul.navbar li {
+    list-style-type: none;
+    display:inline-block;	
+  }
+
+  /* add padding and formatting to list item links */
   ul.navbar li a {			
     display:block;
     padding: 14px 16px;
@@ -76,18 +93,19 @@
     text-decoration: none;
   }  
 
+  /* change link background color on hover */
   ul.navbar li a:hover {
     background-color: rgb(124,33,40); 
   }
+
 </pre>
 
-<ul class = "horizontal navbar">
-<li> <a href = "#">Page 1</a> </li>
-<li> <a href = "#">Page 2</a> </li>
-<li> <a href = "#">Page 3</a> </li>
+<ul class = "navbar">
+<li> <a>Page 1</a> </li>
+<li> <a>Page 2</a> </li>
+<li> <a>Page 3</a> </li>
 </ul>
 <br><br>
-
 
 </body>
 
