@@ -52,12 +52,14 @@ button {
 
 <h2> Summary of Position Styles</h2>
 <ul>
-	<li> Static (default): Element is positioned based on HTML, and cannot be moved using CSS (e.g., changing 'top' will not change its position</li>
+	<li> Static (default): Element is positioned based on the normal flow of the page (as specified by the HTML tags), and cannot be moved using CSS (e.g., changing 'top' will not change its position</li>
 	<li> Fixed: element has a fixed position which is relative to the viewable window (the viewport); element will stay in place when user scrolls</li>
-	<li> Absolute: Like fixed, but the position is relative to its closest parent with non-static position</li>
+	<li> Absolute: Like fixed, but the position is relative to its closest parent with non-static position; if there are no non-static parent elements, the element behaves as if it were 'fixed'.</li>
 	<li> Relative: Its position is relative to its own static position. Setting position to 'relative' can create a reference point for elements with 'absolute' positions</li>
 </ul>
 
+
+  <!-- parent div -->
   <div id = "parent" class = "parent">
      This is the parent div which has the following styles: 
      <ul>
@@ -65,6 +67,7 @@ button {
      <li id = "parent-top"> </li>     	
      </ul>
 
+    <!-- child div --> 
     <div id = "child" class="child"> 
     	This is the child div which has the following styles: 
     	<ul>
@@ -72,8 +75,11 @@ button {
     	<li id = "child-top"> </li>		
     	</ul> 
     </div>
+    <!-- end child div -->
 
 	<br>
+
+    <!-- div containing inputs -->
 	<div class = "white">
 		<label for = "select-parent"> Parent div: </label>
  		<select id = "select-parent" onchange = "changeParentPosition()">
@@ -97,8 +103,10 @@ button {
 		<button onclick = "moveDiv('child',2);">Move Down</button>
 		<button onclick = "resetPosition('child');">Reset Style</button>
 	</div>
+    <!-- end of div containing inputs -->
 	
 </div>
+<!-- end of parent div -->
 
 <h2> Questions </h2>
 
@@ -107,13 +115,18 @@ button {
     <li> The width of each label should be 100px. Why isn't this the case? Can you fix the code? </li>
     <li> Using the form on this page, reposition the divs so that
         <ul>
-            <li> the parent div is positioned at the top left of the window </li>
+            <li> the parent div is positioned at the top left of the viewable window </li>
+            <li> the child div is at the top left of the viewable window, and the parent div is in its original position </li>
                 <li> the child div is at the top left of the parent div, which is at its original position </li>
-            <li> the child div is at the top left of the window, and the parent div is in its original position </li>
         </ul>
     </li>
 </ol>
 
+
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<p>A line at the bottom so that we scan scroll...</p>
 </body>
 
 </html>

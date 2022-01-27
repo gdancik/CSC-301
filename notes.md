@@ -26,9 +26,12 @@ exclude_from_nav: false
 * [CSS]({{ site.baseurl }}/data/notes/CSS.pdf) 
     - Examples: [css_example.html]({{ site.baseurl }}/data/notes/css_example.html) | [display.html]({{ site.baseurl }}/data/notes/display.html) |
 [navbar.html]({{ site.baseurl }}/data/notes/navbar.html) |
-[hide.html]({{ site.baseurl }}/data/notes/hide.html)
+[hide.html]({{ site.baseurl }}/data/notes/hide.html) |
+[position.html]({{ site.baseurl }}/data/notes/position.html)
+
 {% comment %}
 * A closer look at the position [position.html]({{ site.baseurl }}/data/notes/position.html) property
+
 * [JavaScript]({{ site.baseurl }}/data/notes/JavaScript.pdf) 
     * Examples: [JS Basics]({{ site.baseurl }}/data/notes/js_basics.html) |
      [JS Array]({{ site.baseurl }}/data/notes/js_array.html) |
