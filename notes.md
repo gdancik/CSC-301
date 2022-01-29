@@ -28,16 +28,15 @@ exclude_from_nav: false
 [navbar.html]({{ site.baseurl }}/data/notes/navbar.html) |
 [hide.html]({{ site.baseurl }}/data/notes/hide.html) |
 [position.html]({{ site.baseurl }}/data/notes/position.html)
-
-{% comment %}
-* A closer look at the position [position.html]({{ site.baseurl }}/data/notes/position.html) property
-
 * [JavaScript]({{ site.baseurl }}/data/notes/JavaScript.pdf) 
-    * Examples: [JS Basics]({{ site.baseurl }}/data/notes/js_basics.html) |
+    * Examples: 
+     [JS Write]({{ site.baseurl }}/data/notes/js_write.html) |
+     [JS Scope]({{ site.baseurl }}/data/notes/js_scope.html) |
      [JS Array]({{ site.baseurl }}/data/notes/js_array.html) |
      [JS Objects]({{ site.baseurl }}/data/notes/js_objects.html) |
-     [JS Inputs]({{ site.baseurl }}/data/notes/js_inputs.html) |
-     [JS onclick change]({{ site.baseurl }}/data/notes/js_change_onclick.html) 
+     [JS Basics]({{ site.baseurl }}/data/notes/js_basics.html) |
+     [JS Inputs]({{ site.baseurl }}/data/notes/js_inputs.html) 
+{% comment %}
 * [Web Frameworks]({{ site.baseurl }}/data/notes/WebFrameworks.pdf)
     * Examples:  [JS functions]({{ site.baseurl }}/data/notes/JS_functions.html) |
    [jQuery Example #1]({{ site.baseurl }}/data/notes/jquery1.html) |

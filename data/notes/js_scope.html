@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>Variable Declaration and Scope</title>
+   
+    <style>
+
+
+    div {
+        border: 1px solid black;
+    }
+
+    #result {
+        border:none;
+        position: absolute;
+        top: 20%;
+    }
+
+
+    #code, #result {
+        margin: 25px;
+        display:inline-block;
+        width: 40%;
+    }
+
+    button {
+        height: 50px;
+        width: 200px;
+        margin: 5px;
+    }
+    </style>
+
+
+  </head>
+  <body>
+
+    <h1>
+      Variable Declaration and Scope
+    </h1>
+
+    <p> Click the buttons to compare the behavior of using <i>var</i> vs <i>let</i> for variable declaration, and the effect of the "use strict" directive". In particular,
+
+    <ul>
+        <li> Compare the output between <i>var</i> and <i>let</i>
+        <li> If a variable is not declared (and we are not in strict mode), then a global variable will be created. </li>
+        <li> In strict mode, variables <i>must</i> be declared (note there is no output; check the console for an error message)</li>
+    </ul>
+
+    <button onclick = 'callFunction(varExample);'><i>Var</i> example</button>
+    <button onclick = 'callFunction(letExample);'><i>Let</i> example</button>
+    <button onclick = 'callFunction(notStrictExample);'><i>No declaration and not strict</i></button>
+    <button onclick = 'callFunction(useStrictExample);'><i>No declaration and use strict</i></button>
+
+    <hr><br>
+
+    <div style = "position: relative;">
+      <div id = "code">
+          Click a button above to see the JavaScript code and output.
+      </div>
+      <div id = "result">
+      </div>
+    </div>
+
+    <script>
+
+    function varExample() {
+        let s = "";
+
+        var x = 3;
+
+        {
+            var x = 4;
+            s = 'Inside inner block, x = ' + x + '\n\n';
+        }
+
+        s += 'After inner block, x = ' + x + '\n';
+
+        return s;
+    }
+
+
+    function letExample() {
+        let s = "";
+
+        let x = 3;
+
+        {
+            let x = 4;
+            s = 'Inside inner block, x = ' + x + '\n\n';
+        }
+
+        s += 'After inner block, x = ' + x + '\n';
+
+        return s;
+    }
+
+
+    
+
+    function notStrictExample() {
+        mynum = 3;
+        return "The value of mynum is " + mynum +
+            " and an implicit global variable is created"; 
+    }
+
+
+    function useStrictExample() {
+        "use strict";
+        num1 = 3;
+        return "The value of num1 is: " + num1; 
+    }
+
+    function callFunction(func) {
+        
+        document.getElementById('result').innerHTML = '';
+
+        let code_string = func.toString();
+        code_string = code_string.replaceAll('let x', 
+            '<span style = "color:red">let x</span>')
+        code_string = code_string.replaceAll('var x', 
+            '<span style = "color:red">var x</span>')
+
+
+        document.getElementById('code').innerHTML = '<pre><code>' + 
+            code_string + '</pre></code>'; 
+
+        let res = func();
+
+        const regex = /After inner block, x = [0-9]/;
+        res = res.replace(regex, '<span style = "color:red">$&</span>');
+
+
+        document.getElementById('result').innerHTML = '<pre>' + res + '</pre>';
+    }
+
+    
+    </script>
+
+
+  </body>
+</html>
+
+

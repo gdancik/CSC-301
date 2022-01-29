@@ -15,16 +15,16 @@
 <body>
   <h1> Javascript Array Example </h1>
   <p> This example uses JavaScript to display a list where each list item is
-      an element of an array. All content in <span id = "blue" class = "js"></span> is generated using JavaScript. 
-  </p>
+  an element of an array. All content in <span id = "blue" class = "js"></span> is generated using JavaScript. For more information, see <a href = "https://www.w3schools.com/js/js_arrays.asp">https://www.w3schools.com/js/js_arrays.asp</a> and <a href = "https://www.w3schools.com/js/js_loop_for.asp">https://www.w3schools.com/js/js_loop_for.asp</a></p>
 
   <script>
+    "use strict";
     document.getElementById('blue').innerHTML = 'blue';
   </script>
 
   <h3> Example using <i> for...of </i> </h3>
 
-  Note that the correct syntax uses <i>of</i> and not <i>in</i>; using <i>in</i> will iterate over all of the properties of an object, and not items in a collection. For more information, see <a href = "https://www.w3schools.com/js/js_loop_for.asp">https://www.w3schools.com/js/js_loop_for.asp</a>. 
+  Note that the correct syntax uses <i>of</i> and not <i>in</i>; using <i>in</i> will iterate over all of the properties of an object, and not items in a collection. 
 
   <pre><code>
     for (element of x) {
@@ -34,7 +34,8 @@
 
 
   <script>
-    classes = ['CSC-301', 'CSC-314', 'CSC-450']
+    "use strict";
+    const classes = ['CSC-202', 'CSC-301', 'CSC-314']
     document.write('<div class = "js">');
     document.write('This semester I am teaching the following courses: ');
     document.write('<ul>');
@@ -48,16 +49,17 @@
   <h3> Same example using <i> for </i> loop with index </h3>
 
   <pre><code>
-    for (var i = 0; i &lt x; i++) {
+    for (var i = 0; i &lt x.length; i++) {
         // do something with element x[i]
     }
   </code></pre>
 
   <script>
+    "use strict";
     document.write('<div class = "js">');
     document.write('This semester I am teaching the following courses: ');
     document.write('<ul>');
-    for (var i = 0; i < classes.length; i++) {
+    for (let i = 0; i < classes.length; i++) {
       document.write('<li>' + classes[i] + '</li>'); 
     }
     document.write('</ul>');

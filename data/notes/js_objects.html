@@ -1,24 +1,23 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-
-<title> Javascript Object Example </title>
-
+  <title> Javascript Object Example </title>
 </head>
 
 <body>
 
   <h1> Javascript Object Example </h1>
   
-  <p> All content below is generated in JavaScript -- see page source for how this is done. </p>
+  <p> This page demonstrates the use of JavaScript objects.All content below is generated in JavaScript -- see page source for how this is done. For more information, see <a href = "https://www.w3schools.com/js/js_objects.asp">https://www.w3schools.com/js/js_objects.asp</a> </p>
   <hr> <br>
 
   <script>
-
+  "use strict";
     
     document.write('<h3>Accessing elements of an object using the dot operator</h3>');
+
     // create an object with course information
-    let thisCourse = {course: 'CSC-301', time: 'MWF, 11:00 - 11:50'};
+    const thisCourse = {course: 'CSC-301', time: 'MWF, 10:00 - 10:50'};
     
     // use the dot operator to access the properties of an object
     document.write('This course is ' + thisCourse.course + '<br>');
@@ -26,9 +25,9 @@
                 thisCourse.time);
     
     document.write('<h3>Use a loop with <i>in</i> to iterate over properties of an object</h3>');
-    
+   
     // use for loop with 'in' to iterate over each property of an object
-    for (prop in thisCourse) {
+    for (let prop in thisCourse) {
       document.write(prop + ': ' + thisCourse[prop] + '<br>');
     }
       
@@ -38,8 +37,8 @@
     document.write("<ul>");
 
     // create an array of objects
-    let myCourses = [ {course: 'CSC-314', time: 'MWF, 1:00 - 1:50'},
-                  {course: 'CSC-450', time: 'MWF, 2:00 - 2:50'}
+    const myCourses = [ {course: 'CSC-314', time: 'MWF, 9:00 - 9:50'},
+                        {course: 'CSC-202', time: 'MWF, 11:00 - 11:50'}
                 ];
 
     // add this course

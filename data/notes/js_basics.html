@@ -17,6 +17,7 @@
 
   button {
 	  height: 20px;
+      width: 200px;
   }
 </style>
 
@@ -27,6 +28,7 @@
   <h1 id = "title"> Some Basic Javascript Examples </h1>
 
   <script>
+   "use strict";
     document.write('<div id = "intro"> This intro is written \
 					using Javascript </div>');
   </script>
@@ -37,27 +39,29 @@
   <button onclick = "displayAlert();">Display Alert </button>
   <button onclick = "outputConsole();">Write to console </button>
   <button onclick = "increaseCounter();">Increase Counter </button>
+  <button onclick = "this.style.display = 'none';">Hide me </button>
 
   <br><br>
 
   <div id = "output"> </div>
 
   <script>
-    // gets intro div by its id, and changes its innerHTML
-    function changeIntro() {
+  "use strict";
+
+  // gets intro div by its id, and changes its innerHTML
+  function changeIntro() {
 	    let div = document.getElementById("intro");
-	    div.innerHTML = 'This paragraph has been <span style="color:blue">' + 		
-					'changed</span> using Javascript';
+	    div.innerHTML = 'This paragraph has been <span style="color:blue">' + 		                     'changed</span> using Javascript';
     }
 
-    // gets intro div by its id, and sets its className to "yellow"
-    function setIntroClass() {
+  // gets intro div by its id, and sets its className to "yellow"
+  function setIntroClass() {
 	    let div = document.getElementById('intro');
 
 	    // add "yellow" class
 	    div.classList.add('yellow');
 
-	    // the code below would replace all classes with the single class "yellow"
+	    // Note: the code below would replace all classes with the single class "yellow"
 	    //div.className = "yellow";	
     }
 
@@ -79,10 +83,10 @@
 
       // increment each counter
       globalCounter++;
-	    functionCounter++;
+	  functionCounter++;
     
-	    output = document.getElementById('output');
-	    output.innerHTML = 'Global Counter: ' + globalCounter + '<br>' +
+	  output = document.getElementById('output');
+	  output.innerHTML = 'Global Counter: ' + globalCounter + '<br>' +
             'Function Counter: ' + functionCounter + '<br>';
       }
   </script>
@@ -91,9 +95,9 @@
   <i> Exercises: </i> Use Javascript to:
   <ul>
     <li> Change color of the page heading to red </li>
+    <li> Look at the children of the first (and only) <i>ul</i> element </li>
     <li> Determine how many buttons there are </li>
     <li> Click all the buttons </li>
-    <li> Look at the children of the first (and only) <i>ul</i> element </li>
   </ul>
 
 </body>

@@ -24,13 +24,15 @@
 
   <h1> Some Javascript Examples for Interacting with Inputs </h1>
 
-
   <!-------------------------------------------------------------------
     When a form's onsubmit returns false, the submission is canceled;
     otherwise, the values are submitted and the form resets (even if
-    no form action is specified).
+    no form action is specified). Following recommended practice,
+    the logic of form submission is handled by adding an event listener
+    rather than through the onsubmit attribute. 
   --------------------------------------------------------------------->
-  <form onsubmit = "return submitInfo();">    
+
+  <form id = "myform" onsubmit = 'return false;'>    
     
     <div>
           
@@ -48,6 +50,10 @@
       <div class = "input">
         <input type = "submit" value = "Submit Values">   
       </div>
+
+      <div class = "input">
+        <input type = "reset" value = "Reset Values">   
+      </div>
       
     </div>
   </form>
@@ -56,14 +62,19 @@
   <div id = "output">  </div>
 
   <script>
+  "use strict";
+
+  // add event lisenter for form submission
+  document.getElementById('myform').addEventListener('submit', submitInfo);
 
   // gets intro div by its id, and changes its innerHTML
   function submitInfo() {
 	  let checkStatus, numberValue;
 	
-    // get the number entered and store this in numberValue
+      // TO DO: get the number entered and store this in numberValue
     
-	  // determine if checked box is 'checked' or not, and store in checkStatus
+	  // TO DO: determine if checked box is 'checked' or not, 
+      //    and store this in checkStatus
 	
       let outString =  'the checkbox is: ' + checkStatus + '<br>' + 
                      'the number is: ' + numberValue;
@@ -71,8 +82,6 @@
 	  document.getElementById('output').innerHTML = outString;
     
       document.getElementById('output').style.border = ' solid 1px black';
-
-
 
     return false;
 }
@@ -85,7 +94,6 @@
   <ul>
     <li> Display the inputs on the same line </li>
 	  <li> Add 10px of space between each input </li>
-    <li> Alter the button so it has the same height as the numeric input </li>
   </ul>
 
   
