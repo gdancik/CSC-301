@@ -7,8 +7,8 @@ exclude_from_nav: false
 ---
   
 * [Assignment #1]({{ site.baseurl }}/data/hw/Assignment1.pdf) (Due: Friday, 01/28/22)
-<hr style = "height:1px; background-color:maroon;">
 * [Assignment #2]({{ site.baseurl }}/data/hw/Assignment2.pdf) (Due: Monday, 01/31/22)
+<hr style = "height:1px; background-color:maroon;">
 * [Assignment #3]({{ site.baseurl }}/data/hw/Assignment3.pdf) (Due: Monday, 02/07/20)
     * [question1.html]({{ site.baseurl }}/data/hw/question1.html) 
     * [registration.html]({{ site.baseurl }}/data/hw/registration.html) 
