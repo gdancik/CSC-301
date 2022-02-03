@@ -100,7 +100,7 @@ td:hover p.reveal {
     
     <! -- first row of table -->
     <tr>
-      <td> <input type="checkbox" id="check1" onclick="processCheck(1)"> </td>
+      <td> <input type="checkbox" id="check1"> </td>
       <td> <input type="number" name="num1" id="num1" min="1" max="10" onblur="loseFocus(1)" > </td>
       <td><p class="reveal">Pizza. With Cheese</p>Cheese pizza</td>
       <td><a href="https://en.wikipedia.org/wiki/Pizza">More information</a></td>
@@ -108,14 +108,14 @@ td:hover p.reveal {
     
     <! -- second row of table -->
     <tr>
-      <td> <input type="checkbox" id="check2" onclick="processCheck(2)"></td>
+      <td> <input type="checkbox" id="check2"></td>
       <td> <input type="number" name="num2" id="num2" min="1" max="10" onblur="loseFocus(2)"> </td>
       <td><p class="reveal">Pizza. With Pepperoni</p>Pepperoni pizza</td>
       <td><a href="https://en.wikipedia.org/wiki/Pizza">More information</a></td>
     </tr>
   </table>
   <br>
-  <button class = "btn" onclick = "summarize();">Print items</button>
+  <button id = "btn_summarize" class = "btn">Print items</button>
   
   </center>
   </body>
@@ -123,11 +123,26 @@ td:hover p.reveal {
   
   
 <script>
+
+  /********************************************
+   * Add event listeners   
+  ********************************************/
+   
+  // add event listeners for check boxes
+  for (let i = 1; i <= 2; i++) {
+    let id = 'check' + i;
+    document.getElementById(id).addEventListener("click", processCheck);
+  }
+  
+  // add event listener for button
+  document.getElementById('btn_summarize').addEventListener("click", summarize);
   
   
-  function processCheck(num) {
-	  let checkInput = document.getElementById('check'+num);
-	  let numInput = document.getElementById('num'+num);
+  // Enable/Disable numeric input when the user checks or unchecks a checkbox
+  function processCheck() {
+    
+    let num = this.id.replace('check','num');
+	  let numInput = document.getElementById(num);
 
     /*
     if check is checked, 
@@ -136,23 +151,24 @@ td:hover p.reveal {
       disable numeric input and set value to ""
     */
       
+    // remove this when finished
     numInput.value = 23;  // change num's value to 23 to test
   }
   
+  // generate an alert summarizing the order
   function summarize() {
        
     let summary = '';
 	  let table = document.getElementById("order");
-    
     // table.rows is an HTML collection (similar to an array) of 'tr' elements
-    let outputRow = false;   // so we skip the first row
+    let headerRow = true;   
 	  for (let row of table.rows) {
-        if (outputRow) {
+        if (!headerRow) {
           // row.cells is an HTML collection of 'td' elements; 
           // cells[2] is the 3rd column, which contains the item
           summary = summary + row.cells[2].innerText + '\n';          
         } else {
-          outputRow = true;
+          headerRow = false;
         }
 	  }
     
