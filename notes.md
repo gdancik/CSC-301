@@ -36,11 +36,11 @@ exclude_from_nav: false
      [JS Objects]({{ site.baseurl }}/data/notes/js_objects.html) |
      [JS Basics]({{ site.baseurl }}/data/notes/js_basics.html) |
      [JS Inputs]({{ site.baseurl }}/data/notes/js_inputs.html) 
-{% comment %}
 * [Web Frameworks]({{ site.baseurl }}/data/notes/WebFrameworks.pdf)
     * Examples:  [JS functions]({{ site.baseurl }}/data/notes/JS_functions.html) |
    [jQuery Example #1]({{ site.baseurl }}/data/notes/jquery1.html) |
    [jQuery Example #2]({{ site.baseurl }}/data/notes/jquery2.html)
+{% comment %}
 * [Chrome Browser Extensions]({{ site.baseurl }}/data/notes/Extensions.pdf) 
     * Examples:
     [extension_example_1.zip]({{ site.baseurl }}/data/notes/extension_example_1.zip) |
