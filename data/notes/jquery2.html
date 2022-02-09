@@ -1,52 +1,110 @@
 <!DOCTYPE html>
 <head>
-<title> Change CSS of all elements using jQuery </title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title> Change CSS (mouseenter vs mouseover) using jQuery </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+div#d1, div#d2, div#d3 {
+    width:33%;
+    display:inline-block;
+}
+</style>
+
+
 </head>
+
 <html>
 
 <body>
 <script>
+"use strict";
 
 // highlight all elements on mouseenter 
 $(document).ready(function(){  
 
-    // Note: "unset" will return a CSS property to its default (inherited) value
-    $("*").mouseenter(function() {
+    $("#d1, #d1 *").mouseenter(function(event) {
+        $(this).css("background-color", "yellow");
+    });
+
+    $("#d2, #d2 *").mouseover(function(event) {
         $(this).css("background-color", "yellow")
     });
 
-    $("*").mouseout(function() {
-        $(this).css("background-color", "unset")
+    $("#d3, #d3 *").mouseover(function(event){ 
+        event.stopPropagation();
+        $(this).css("background-color", "yellow")
     });
 
-
-    /****************************************************
-    /* Note that the 'hover' function can also be used,
-    /* and has the format:
-
-    /*  $(selector).hover(functionToCallOnMouseEnter, 
-    /*                    functionToCallOnMouseOut)
-
-    /*  $("*").hover(function(){
-    /*       $(this).css("background-color", "yellow");
-    /*     }, function(){
-    /*       $(this).css("background-color", "unset");
-    /*  });
-    *************************************************/
+    // Note: "unset" will return a CSS property to its default (inherited) value
+    $("*").mouseout(function(event) {
+        $(this).css("background-color", "unset")
+    });
 
 }); 
 
 </script>
 
 
-<h1> Change CSS on mouse enter/out using jQuery </h1>
+<h1> Change CSS on mouse enter vs mouseover using jQuery </h1>
+<ul>
+<li> mouseenter/mouseleave: 
+    <ul> 
+        <li> does not bubble (event triggered by a nested element is not sent to the element's parents </li>
+        <li> event is not sent when moving from child to parent </li>
+    </ul></li>
+<li> mouseover/mouseout: 
+    <ul>
+        <li> does bubble (event is sent to parents) </li>
+        <li> you can stop this propagation by calling <i>event.stopPropagation()</i></li>
+  </ul></li>
+<li> for more information, see <a href = "https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event">https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseenter_event</a></li>
+</ul>
+
+
+<div id = "d1">
+    <h2> div #d1 (uses mouseenter)</h2>
 <div> This is a div 
-    <p> This is a paragraph </p>
+    <p> This is a paragraph inside the div </p>
 </div>
 
+This is an unordered list outside the div:
 <ul>
     <li> List item 1 </li>
     <li> List item 2 with a <b> bold </b> element </li>
     <li> List item 3 </li>
 </ul>
+</div>
+
+
+<div id = "d2">
+    <h2> div #d2 (mouseover)</h2>
+<div> This is a div 
+    <p> This is a paragraph inside the div </p>
+</div>
+
+This is an unordered list outside the div:
+<ul>
+    <li> List item 1 </li>
+    <li> List item 2 with a <b> bold </b> element </li>
+    <li> List item 3 </li>
+</ul>
+</div>
+
+<div id = "d3">
+    <h2> div #d3 (mouseover w/ stopPropagation)</h2>
+<div> This is a div 
+    <p> This is a paragraph inside the div</p>
+</div>
+
+This is an unordered list outside the div:
+<ul>
+    <li> List item 1 </li>
+    <li> List item 2 with a <b> bold </b> element </li>
+    <li> List item 3 </li>
+</ul>
+</div>
+
+  </body>
+</html>
+
+

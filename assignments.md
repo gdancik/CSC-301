@@ -8,15 +8,15 @@ exclude_from_nav: false
   
 * [Assignment #1]({{ site.baseurl }}/data/hw/Assignment1.pdf) (Due: Friday, 01/28/22)
 * [Assignment #2]({{ site.baseurl }}/data/hw/Assignment2.pdf) (Due: Monday, 01/31/22)
-<hr style = "height:1px; background-color:maroon;">
 * [Assignment #3]({{ site.baseurl }}/data/hw/Assignment3.pdf) (Due: <strike> Monday, 02/07/22</strike> <span style = "color:red">Wednesday, 02/09/22</span>)
     * [question1.html]({{ site.baseurl }}/data/hw/question1.html) 
     * [registration.html]({{ site.baseurl }}/data/hw/registration.html) 
     * [products_js.html]({{ site.baseurl }}/data/hw/products_js.html) 
-{% comment %}
-* [Assignment #4]({{ site.baseurl }}/data/hw/Assignment4.pdf) (Due: Tuesday, 02/18/22 by 12:00 noon)
-    * [links.html]({{ site.baseurl }}/data/hw/links.html) 
+<hr style = "height:1px; background-color:maroon;">
+* [Assignment #4]({{ site.baseurl }}/data/hw/Assignment4.pdf) (Due: Wednesday, 02/16/22)
     * [buttons.html]({{ site.baseurl }}/data/hw/buttons.html) 
+    * [links.html]({{ site.baseurl }}/data/hw/links.html) 
+{% comment %}
 * [Assignment #5]({{ site.baseurl }}/data/hw/Assignment5.pdf) (Due: Monday, 03/02/22)
     * [highlighter_logic.html]({{ site.baseurl }}/data/hw/highlighter_logic.html)
     
