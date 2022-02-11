@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+          
+    <title>Separate HTML and CSS from the content</title>
+    
+  <style>
+    
+    .csc {  
+      color:blue;      
+    }
+    
+    </style>
+    
+  </head>
+  
+  <body>
+    
+    <h1>
+       Separate HTML and CSS from your page content!
+    </h1>
+    
+    <p>
+       Javascript is used to generate the two lists below. Suppose we want to add the 'csc' class to each list item. Which one is easier to change?
+    </p>
+     
+    <script>
+    "use strict";
+    let csc_courses1= ['<li>CSC 180</li>', '<li>CSC 210</li>', '<li>CSC 231</li>', '<li>CSC 270</li>'];
+      
+    document.write('<ol>');    
+      for (let course of csc_courses1) {      
+        document.write(course);
+      } 
+      document.write('</ol>')
+
+    </script>
+
+  <hr>
+
+      <script>
+    "use strict";
+    let csc_courses2= ['CSC 180', 'CSC 210', 'CSC 231', 'CSC 270'];
+    
+    document.write('<ol>');    
+      for (let course of csc_courses2) {      
+        document.write('<li>');
+        document.write(course);
+        document.write('</li>');
+      } 
+      document.write('</ol>')
+    
+    </script>
+    
+  </body>
+</html>
+

@@ -36,6 +36,8 @@ exclude_from_nav: false
      [JS Objects]({{ site.baseurl }}/data/notes/js_objects.html) |
      [JS Basics]({{ site.baseurl }}/data/notes/js_basics.html) |
      [JS Inputs]({{ site.baseurl }}/data/notes/js_inputs.html) 
+* Loops and Functions FTW ([csc_courses.html]({{ site.baseurl }}/data/notes/csc_courses.html) |
+[todo.html]({{ site.baseurl }}/data/notes/todo.html))
 * [Web Frameworks]({{ site.baseurl }}/data/notes/WebFrameworks.pdf)
     * Examples:  [JS functions]({{ site.baseurl }}/data/notes/JS_functions.html) |
    [jQuery Example #1]({{ site.baseurl }}/data/notes/jquery1.html) |
