@@ -42,6 +42,10 @@ exclude_from_nav: false
     * Examples:  [JS functions]({{ site.baseurl }}/data/notes/JS_functions.html) |
    [jQuery Example #1]({{ site.baseurl }}/data/notes/jquery1.html) |
    [jQuery Example #2]({{ site.baseurl }}/data/notes/jquery2.html)
+    * React examples:  [Hello World]({{ site.baseurl }}/data/notes/react_hello_world.html) |
+        [Components 1]({{ site.baseurl }}/data/notes/react_components1.html) |
+        [Components 2]({{ site.baseurl }}/data/notes/react_components2.html) |
+        [To Do List]({{ site.baseurl }}/data/notes/react_todo.html) 
 {% comment %}
 * [Chrome Browser Extensions]({{ site.baseurl }}/data/notes/Extensions.pdf) 
     * Examples:

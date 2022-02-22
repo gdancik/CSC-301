@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+      .blue {
+        color: blue;
+      }
+
+      .yellow {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>React components are reusable and can contain other components</h1>
+
+    More information:
+    <a href="https://reactjs.org/docs/components-and-props.html">
+      https://reactjs.org/docs/components-and-props.html
+    </a>
+
+    <hr />
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+      "use strict";
+
+      function Welcome1(props) {
+        return <h2 className={props.className}>Hello {props.name}</h2>;
+      }
+
+      function Welcome3(props) {
+        return (
+          <div>
+            <Welcome1 className="yellow" name="Brenda" />
+            <Welcome1 className="blue" name="Eddie" />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Welcome3 />, document.getElementById("root"));
+    </script>
+    
+    <hr>
+    
+    A react component can include an <i>array</i> of react elements or components:
+    
+    
+    <div id = "withArray"> </div>
+    
+    <script type="text/babel">
+      "use strict";
+
+      function Welcome3(props) {
+      
+        //  create an array of elements/components
+        const welcomes = [<Welcome1 name = 'Jack'/>, <Welcome1 name = 'Diane'/>]
+      
+        return (
+          <div>
+            {welcomes}
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Welcome3 />, document.getElementById("withArray"));
+    </script>
+    
+    <hr>
+    We can therefore use the array <i>map</i> method 
+    (<a href = "https://www.w3schools.com/jsref/jsref_map.asp">https://www.w3schools.com/jsref/jsref_map.asp</a>) to map data values to React elements: 
+    
+    <div id = "usingMap"> </div>
+    
+    <script type="text/babel">
+      "use strict";
+      
+      function Welcome3(props) {
+      
+        // We need a function to map each value of an array to a React element
+        // Note that createWelcome1 and createWelcome2 are identical, but
+        // in the code below we use an anonymous function
+      
+        // function expression
+        let createWelcome1 = function(val) {
+          return <Welcome1 name = {val}/>;
+        }
+      
+        // arrow function (https://www.w3schools.com/js/js_arrow_function.asp)
+        let createWelcome2 = (val) => <Welcome1 name = {val}/>;
+
+        // to map each element of the array 'welcomes' we can use either:
+        //  (1) welcomes.map(createWelcome1)
+        //  (2) welcomes.map(createWelcome2)
+        //  (3) welcomes.map( (val) => <Welcome1 name = {val}/>)
+
+        //  create an array of elements/components
+        const welcomes = ['Zak', 'Sara'];
+    
+        return (
+          <div>
+            {welcomes.map( (val) => <Welcome1 name = {val}/>)}
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Welcome3 />, document.getElementById("usingMap"));
+    </script>
+    
+  </body>
+</html>
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+      .greeting {
+        color:blue;
+        background-color: yellow;
+        text-align: center;
+      }
+      
+      div.myname {
+        border: 1px solid black;
+      }
+      
+    </style>
+    
+  </head>
+  <body>
+    
+    <h1>React components and JSX</h1>
+
+   <ul>      
+     <li> A function component takes a <i>properties object</i> and returns 
+      a React element. </li>
+      <li><b>Be careful:</b></li>
+      <ul>  
+        <li> Components must begin with a capital letter; otherwise
+          they will be interpreted as DOM tags </li>
+        <li> If specifying a class name in JSX, use <i>className</i> instead of <i>class</i>,
+          since the latter is already a keyword in JavaScript</li>
+        <li>Property/attribute names are in camelcase, e.g., onClick instead of onclick</li>
+        <li>Use curly braces around JavaScript expressions to get their values</li>
+        <li>Always use open and closing tags, e.g., &lt;Welcome/&gt; </li>
+        <li>Uses braces with <i>return</i> to prevent automatic semi-colon insertion </li>
+        <li>Components must return an <i>element</i>, such as a <i>div</i>, or you can 
+           use empty tags  (&lt;&gt; and &lt;/&gt;) </li>
+      </ul>
+    </ul>
+    
+    More information: <a href = "https://reactjs.org/docs/components-and-props.html">https://reactjs.org/docs/components-and-props.html</a>
+    <hr>
+    
+    <div id = "root"> </div>
+    
+    <script type="text/babel">
+      "use strict";
+  
+    function Welcome(props) {
+        return <h2 className = "greeting">Hello {props.name}</h2>                  
+    }
+    
+      ReactDOM.render(<Welcome name = 'Everyone!'/>, document.getElementById("root"));
+    </script>
+    
+    
+    <hr>
+    
+    Exercise: Create a component and use it to display: "My name is <b>name</b>" in the div below
+    
+    <p> </p>
+    
+    <div id = "name"></div>
+
+    <hr>
+    
+    
+  </body>
+</html>
+
+

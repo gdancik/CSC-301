@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <h1>Hello World in React</h1>
+
+    <h2>Using JSX</h2>
+    <div id="root1"></div>
+
+    <hr />
+
+    <h2>Not using JSX</h2>
+    <div id="root2"></div>
+
+    <script type="text/babel">
+      "use strict";
+      const element = <h3>Hello World!</h3>;
+      ReactDOM.render(element, document.getElementById("root1"));
+    </script>
+
+    <script type="text/babel">
+      "use strict";
+      const element = React.createElement("h3", null, "Hello World!");
+      ReactDOM.render(element, document.getElementById("root2"));
+    </script>
+  </body>
+</html>
+
