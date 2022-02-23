@@ -54,7 +54,8 @@
     
     <hr>
     
-    A react component can include an <i>array</i> of react elements or components:
+    A react component can include an <i>array</i> of react elements or components (though each element
+    should have its own key, which should be unique: https://reactjs.org/docs/lists-and-keys.html):
     
     
     <div id = "withArray"> </div>
@@ -77,6 +78,7 @@
       ReactDOM.render(<Welcome3 />, document.getElementById("withArray"));
     </script>
     
+
     <hr>
     We can therefore use the array <i>map</i> method 
     (<a href = "https://www.w3schools.com/jsref/jsref_map.asp">https://www.w3schools.com/jsref/jsref_map.asp</a>) to map data values to React elements: 
@@ -86,6 +88,7 @@
     <script type="text/babel">
       "use strict";
       
+
       function Welcome3(props) {
       
         // We need a function to map each value of an array to a React element
@@ -93,31 +96,35 @@
         // in the code below we use an anonymous function
       
         // function expression
-        let createWelcome1 = function(val) {
-          return <Welcome1 name = {val}/>;
+        let createWelcome1 = function(val, index) {
+          return <Welcome1 key = {'key'+index} name = {val}/>;
         }
       
         // arrow function (https://www.w3schools.com/js/js_arrow_function.asp)
-        let createWelcome2 = (val) => <Welcome1 name = {val}/>;
+        let createWelcome2 = (val, index) => <Welcome1 key = {'key' + index} name = {val}/>;
 
         // to map each element of the array 'welcomes' we can use either:
         //  (1) welcomes.map(createWelcome1)
         //  (2) welcomes.map(createWelcome2)
-        //  (3) welcomes.map( (val) => <Welcome1 name = {val}/>)
+        //  (3) welcomes.map( (val, index) => <Welcome1 key = {'key' + index} name = {val}/>)
 
         //  create an array of elements/components
         const welcomes = ['Zak', 'Sara'];
     
         return (
           <div>
-            {welcomes.map( (val) => <Welcome1 name = {val}/>)}
+            {welcomes.map( (val, index) => <Welcome1 key = {'key'+index} name = {val}/>)}
           </div>
         );
       }
+      
 
       ReactDOM.render(<Welcome3 />, document.getElementById("usingMap"));
+      
+      
     </script>
     
   </body>
 </html>
+
 
