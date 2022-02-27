@@ -101,20 +101,46 @@
       <div id = "todo"> </div>
       
       <script type = "text/babel">
-    
+
+
+      /*
+
       // Note: inline styles are JS objects with property-value pairs
       const myStyle = {backgroundColor: "yellow"};
      
       ReactDOM.render(<div style = {myStyle}>FIX ME </div>, 
           document.getElementById('todo'));
 
+      */
+
+      const mylist = ['Grade Papers', 'Clean My Room', 'Get a Haircut'];
+      
+      function ToDoList(props) {
+      
+        return (
+          <div>
+            {mylist.map( (val,id) => 
+                  <ToDoItem id = {'myitem' +id} 
+                           key = {'myitem'+id} 
+                          task = {val}
+                  />) }
+          </div>
+        );
+      
+      }
+      
+      ReactDOM.render(<ToDoList/>, 
+          document.getElementById('todo'));
+
+
       </script>    
-    
     
             
     </div>
     
   </body>
 </html>
+
+
 
 

@@ -3,7 +3,7 @@
 In a synchronous language, each statement waits for the previous statement
 to finish before executing.  
 
-Javascript is asynchronous (not synchronous), meaning that the current
+Javascript can behave in an asynchronous (not synchronous) way, meaning that the current
 statement does not need to finish before the next statement is executed.
 
 This makes sense, since if you were retreiving images to display on a web page,
@@ -21,6 +21,22 @@ h1 {
 </head>
 <body>
 
+  
+  <h1> Certain JavaScript functions behave asynchronously </h1>
+  
+  <p> An <i>asynchronous</i> function pauses its execution, allows other code statements to execute, and then resume. Asynchronous functions may be used to manage timers or to to 
+  fetch data. These functions return before they are completed, but resume execution 
+  (usually through a callback function) at the appropriate time (after a certain interval,
+  or after data has been retreived). </p>
+  
+  For example, the function call <i>setTimeout(callback, ms)</i> will execute the function 
+  <i>callback()</i> after <i>ms</i> milliseconds.
+  
+  <p>
+     For more information, see the w3schoosl Async tutorials starting with 
+    <a href = "https://www.w3schools.com/js/js_callback.asp">https://www.w3schools.com/js/js_callback.asp</a>
+  </p>
+    
     <br><br>
 <div id = "output"></div>
 
@@ -61,3 +77,5 @@ addOutput(3);
 
 </body>
 </html>
+
+

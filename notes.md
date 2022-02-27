@@ -46,7 +46,6 @@ exclude_from_nav: false
         [Components 1]({{ site.baseurl }}/data/notes/react_components1.html) |
         [Components 2]({{ site.baseurl }}/data/notes/react_components2.html) |
         [To Do List]({{ site.baseurl }}/data/notes/react_todo.html) 
-{% comment %}
 * [Chrome Browser Extensions]({{ site.baseurl }}/data/notes/Extensions.pdf) 
     * Examples:
     [extension_example_1.zip]({{ site.baseurl }}/data/notes/extension_example_1.zip) |
@@ -54,6 +53,7 @@ exclude_from_nav: false
     [extension_with_jquery.zip]({{ site.baseurl }}/data/notes/extension_with_jquery.zip)
     * Asynchronous examples: [asynchronous_example.html]({{ site.baseurl }}/data/notes/asynchronous_example.html) |
     [callback.html]({{ site.baseurl }}/data/notes/callback.html)
+{% comment %}
     * Highlighter extension: [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
 * [Python programming basics]({{ site.baseurl }}/data/notes/PythonBasics.zip) 
 * [Advanced programming]({{ site.baseurl }}/data/notes/PythonAdvanced.zip) 
