@@ -53,8 +53,8 @@ exclude_from_nav: false
     [extension_with_jquery.zip]({{ site.baseurl }}/data/notes/extension_with_jquery.zip)
     * Asynchronous examples: [asynchronous_example.html]({{ site.baseurl }}/data/notes/asynchronous_example.html) |
     [callback.html]({{ site.baseurl }}/data/notes/callback.html)
-{% comment %}
     * Highlighter extension: [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
+{% comment %}
 * [Python programming basics]({{ site.baseurl }}/data/notes/PythonBasics.zip) 
 * [Advanced programming]({{ site.baseurl }}/data/notes/PythonAdvanced.zip) 
 </div>

@@ -12,12 +12,12 @@ exclude_from_nav: false
     * [question1.html]({{ site.baseurl }}/data/hw/question1.html) 
     * [registration.html]({{ site.baseurl }}/data/hw/registration.html) 
     * [products_js.html]({{ site.baseurl }}/data/hw/products_js.html) 
-<hr style = "height:1px; background-color:maroon;">
 * [Assignment #4]({{ site.baseurl }}/data/hw/Assignment4.pdf) (Due: Wednesday, 02/16/22)
     * [buttons.html]({{ site.baseurl }}/data/hw/buttons.html) 
     * [links.html]({{ site.baseurl }}/data/hw/links.html) 
+<hr style = "height:1px; background-color:maroon;">
+* [Assignment #5]({{ site.baseurl }}/data/hw/Assignment5.pdf) (Due: Wednesday, 03/09/22)
 {% comment %}
-* [Assignment #5]({{ site.baseurl }}/data/hw/Assignment5.pdf) (Due: Monday, 03/02/22)
     * [highlighter_logic.html]({{ site.baseurl }}/data/hw/highlighter_logic.html)
     
 * [Assignment #6]({{ site.baseurl }}/data/hw/Assignment6.pdf) (Due: Friday, 03/06/22)
