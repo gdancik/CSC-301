@@ -14,7 +14,6 @@ exclude_from_nav: false
 </style>
 
 <div id = 'hidden' class = 'hide' markdown="1">
-</div>
 
 * [Course Introduction]({{ site.baseurl }}/data/notes/Intro.pdf)
     * [Example web page]({{ site.baseurl }}/data/notes/example.html)
@@ -38,6 +37,7 @@ exclude_from_nav: false
      [JS Inputs]({{ site.baseurl }}/data/notes/js_inputs.html) 
 * Loops and Functions FTW ([csc_courses.html]({{ site.baseurl }}/data/notes/csc_courses.html) |
 [todo.html]({{ site.baseurl }}/data/notes/todo.html))
+</div>
 * [Web Frameworks]({{ site.baseurl }}/data/notes/WebFrameworks.pdf)
     * Examples:  [JS functions]({{ site.baseurl }}/data/notes/JS_functions.html) |
    [jQuery Example #1]({{ site.baseurl }}/data/notes/jquery1.html) |
@@ -55,6 +55,16 @@ exclude_from_nav: false
     [callback.html]({{ site.baseurl }}/data/notes/callback.html)
     * Highlighter extension: [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
 * [Python Notebooks]({{ site.baseurl }}/data/notes/python_notebooks.zip) 
+<br><br>
+<center>
+<div id = 'clicker'>
+<a href = '#' style='font-size:120%' onclick = 'viewAll();'>Click to view all notes</a>   
+<script>
+function viewAll() {
+    document.getElementById('hidden').classList.remove('hide');
+    document.getElementById('clicker').classList.add('hide');
+}
+</script>
 {% comment %}
 * [Advanced programming]({{ site.baseurl }}/data/notes/PythonAdvanced.zip) 
 </div>
@@ -76,16 +86,6 @@ exclude_from_nav: false
 * Webscraping in R ([rvest.R]({{ site.baseurl }}/data/notes/rvest.R))
 * [WrapUp]({{ site.baseurl }}/data/notes/Wrapup.pdf) 
 
-<br><br>
-<center>
-<div id = 'clicker'>
-<a href = '#' style='font-size:120%' onclick = 'viewAll();'>Click to view all notes</a>   
-<script>
-function viewAll() {
-    document.getElementById('hidden').classList.remove('hide');
-    document.getElementById('clicker').classList.add('hide');
-}
-</script>
 
 
 </div>
