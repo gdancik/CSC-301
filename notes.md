@@ -55,6 +55,9 @@ exclude_from_nav: false
     [callback.html]({{ site.baseurl }}/data/notes/callback.html)
     * Highlighter extension: [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
 * [Python Notebooks]({{ site.baseurl }}/data/notes/python_notebooks.zip) 
+* [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
+
+
 <br><br>
 <center>
 <div id = 'clicker'>
@@ -71,7 +74,6 @@ function viewAll() {
 
 
 
-* [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
     * [webscraping.zip]({{ site.baseurl }}/data/notes/webscraping.zip)
 * [Selenium Example]({{ site.baseurl }}/data/notes/selenium_example.ipynb) 
     * [Unit Testing Example]({{ site.baseurl }}/data/notes/unittest_example.ipynb) 
