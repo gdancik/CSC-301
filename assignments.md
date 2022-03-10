@@ -15,12 +15,11 @@ exclude_from_nav: false
 * [Assignment #4]({{ site.baseurl }}/data/hw/Assignment4.pdf) (Due: Wednesday, 02/16/22)
     * [buttons.html]({{ site.baseurl }}/data/hw/buttons.html) 
     * [links.html]({{ site.baseurl }}/data/hw/links.html) 
-<hr style = "height:1px; background-color:maroon;">
 * [Assignment #5]({{ site.baseurl }}/data/hw/Assignment5.pdf) (Due: Wednesday, 03/09/22)
+<hr style = "height:1px; background-color:maroon;">
+* [Assignment #6]({{ site.baseurl }}/data/hw/hw6.ipynb) (Due: Wednesday, 03/23/22; Note: You may not use your grace period for this assignment)
 {% comment %}
     * [highlighter_logic.html]({{ site.baseurl }}/data/hw/highlighter_logic.html)
-    
-* [Assignment #6]({{ site.baseurl }}/data/hw/Assignment6.pdf) (Due: Friday, 03/06/22)
 * [Assignment #7]({{ site.baseurl }}/data/hw/Assignment7.pdf) (Due: Wednesday, 03/25/22)
 * [Assignment #8]({{ site.baseurl }}/data/hw/Assignment8.pdf) (Due: Friday, 04/03/22)
     * [Number Cruncher web page]({{ site.baseurl }}/data/hw/number_cruncher.html)
