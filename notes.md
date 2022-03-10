@@ -56,7 +56,7 @@ exclude_from_nav: false
     * Highlighter extension: [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
 * [Python Notebooks]({{ site.baseurl }}/data/notes/python_notebooks.zip) 
 * [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
-
+    * [Web Scraping Demo]({{ site.baseurl }}/data/notes/WebScrapingDemo.zip)
 
 <br><br>
 <center>
