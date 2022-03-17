@@ -57,6 +57,7 @@ exclude_from_nav: false
 * [Python Notebooks]({{ site.baseurl }}/data/notes/python_notebooks.zip) 
 * [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
     * [Web Scraping Demo]({{ site.baseurl }}/data/notes/WebScrapingDemo.zip)
+* [More Scraping]({{ site.baseurl }}/data/notes/MoreScraping.zip)
 
 <br><br>
 <center>
