@@ -18,9 +18,9 @@ exclude_from_nav: false
 * [Assignment #5]({{ site.baseurl }}/data/hw/Assignment5.pdf) (Due: Wednesday, 03/09/22)
 <hr style = "height:1px; background-color:maroon;">
 * [Assignment #6]({{ site.baseurl }}/data/hw/hw6.ipynb) (Due: Wednesday, 03/23/22; Note: You may not use your grace period for this assignment)
+* [Assignment #7]({{ site.baseurl }}/data/hw/Assignment7.pdf) (Due: Monday, 03/28/22)
 {% comment %}
     * [highlighter_logic.html]({{ site.baseurl }}/data/hw/highlighter_logic.html)
-* [Assignment #7]({{ site.baseurl }}/data/hw/Assignment7.pdf) (Due: Wednesday, 03/25/22)
 * [Assignment #8]({{ site.baseurl }}/data/hw/Assignment8.pdf) (Due: Friday, 04/03/22)
     * [Number Cruncher web page]({{ site.baseurl }}/data/hw/number_cruncher.html)
     * [Number Cruncher Unit Test]({{ site.baseurl }}/data/hw/TestNumberCruncher.ipynb) 
