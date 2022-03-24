@@ -59,6 +59,7 @@ exclude_from_nav: false
     * [Web Scraping Demo]({{ site.baseurl }}/data/notes/WebScrapingDemo.zip)
 * [More Scraping]({{ site.baseurl }}/data/notes/MoreScraping.zip)
 * [Selenium Example]({{ site.baseurl }}/data/notes/selenium_example.ipynb) 
+* [Unit Testing Example]({{ site.baseurl }}/data/notes/unittest_example.ipynb) 
 
 <br><br>
 <center>
@@ -74,7 +75,6 @@ function viewAll() {
 * [Advanced programming]({{ site.baseurl }}/data/notes/PythonAdvanced.zip) 
 </div>
     * [webscraping.zip]({{ site.baseurl }}/data/notes/webscraping.zip)
-    * [Unit Testing Example]({{ site.baseurl }}/data/notes/unittest_example.ipynb) 
 * JSON and Web APIs
     * [json_example.html]({{ site.baseurl }}/data/notes/json_example.html) |
      [pokemon_api.html]({{ site.baseurl }}/data/notes/pokemon_api.html) |
