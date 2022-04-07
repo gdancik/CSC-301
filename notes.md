@@ -60,6 +60,10 @@ exclude_from_nav: false
 * [More Scraping]({{ site.baseurl }}/data/notes/MoreScraping.zip)
 * [Selenium Example]({{ site.baseurl }}/data/notes/selenium_example.ipynb) 
 * [Unit Testing Example]({{ site.baseurl }}/data/notes/unittest_example.ipynb) 
+* JSON and Web APIs
+    * [json_example.html]({{ site.baseurl }}/data/notes/json_example.html) |
+     [pokemon_api.html]({{ site.baseurl }}/data/notes/pokemon_api.html) |
+     [JSON in Python]({{ site.baseurl }}/data/notes/JSON_objects_in_Python.ipynb)
 
 <br><br>
 <center>
@@ -75,10 +79,6 @@ function viewAll() {
 * [Advanced programming]({{ site.baseurl }}/data/notes/PythonAdvanced.zip) 
 </div>
     * [webscraping.zip]({{ site.baseurl }}/data/notes/webscraping.zip)
-* JSON and Web APIs
-    * [json_example.html]({{ site.baseurl }}/data/notes/json_example.html) |
-     [pokemon_api.html]({{ site.baseurl }}/data/notes/pokemon_api.html) |
-     [JSON in Python]({{ site.baseurl }}/data/notes/JSON_objects_in_Python.ipynb)
 * R Programming ([R-intro.R]({{ site.baseurl }}/data/notes/R-intro.R) |
                 [dataframes.R]({{ site.baseurl }}/data/notes/dataframes.R))
 * Shiny ([shiny.R]({{ site.baseurl }}/data/notes/shiny.R) |
