@@ -21,6 +21,10 @@ exclude_from_nav: false
 * [Assignment #8]({{ site.baseurl }}/data/hw/Assignment8.zip) (Due: Monday, 04/04/22)
 <hr style = "height:1px; background-color:maroon;">
 * [Assignment #9]({{ site.baseurl }}/data/hw/Assignment9.pdf) (Due: Friday, 04/15/22)
+* Assignment #10
+    * [Assignment #10]({{ site.baseurl }}/data/hw/swirl.pdf) (not collected)
+
+
 {% comment %}
     * [highlighter_logic.html]({{ site.baseurl }}/data/hw/highlighter_logic.html)
 
@@ -29,8 +33,6 @@ exclude_from_nav: false
 * [Final Project]({{ site.baseurl }}/data/hw/FinalProject.pdf) (Due dates vary, submit through [Blackboard](http://easternct.blackboard.com))
     * [Need Ideas?]({{ site.baseurl }}/data/hw/Ideas.pdf) 
 
-* Assignment #10
-    * [Assignment #10A]({{ site.baseurl }}/data/hw/swirl.pdf) (not collected)
 
 <hr style = "height:2px; background-color:blue">
 

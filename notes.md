@@ -64,7 +64,8 @@ exclude_from_nav: false
     * [json_example.html]({{ site.baseurl }}/data/notes/json_example.html) |
      [pokemon_api.html]({{ site.baseurl }}/data/notes/pokemon_api.html) |
      [JSON in Python]({{ site.baseurl }}/data/notes/JSON_objects_in_Python.ipynb)
-
+* R Programming ([R-intro.R]({{ site.baseurl }}/data/notes/R-intro.R) |
+                [dataframes.R]({{ site.baseurl }}/data/notes/dataframes.R))
 <br><br>
 <center>
 <div id = 'clicker'>
@@ -79,8 +80,6 @@ function viewAll() {
 * [Advanced programming]({{ site.baseurl }}/data/notes/PythonAdvanced.zip) 
 </div>
     * [webscraping.zip]({{ site.baseurl }}/data/notes/webscraping.zip)
-* R Programming ([R-intro.R]({{ site.baseurl }}/data/notes/R-intro.R) |
-                [dataframes.R]({{ site.baseurl }}/data/notes/dataframes.R))
 * Shiny ([shiny.R]({{ site.baseurl }}/data/notes/shiny.R) |
         [telephones.zip]({{ site.baseurl }}/data/notes/telephones.zip))
 * Webscraping in R ([rvest.R]({{ site.baseurl }}/data/notes/rvest.R))
