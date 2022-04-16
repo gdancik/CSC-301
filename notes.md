@@ -37,7 +37,6 @@ exclude_from_nav: false
      [JS Inputs]({{ site.baseurl }}/data/notes/js_inputs.html) 
 * Loops and Functions FTW ([csc_courses.html]({{ site.baseurl }}/data/notes/csc_courses.html) |
 [todo.html]({{ site.baseurl }}/data/notes/todo.html))
-</div>
 * [Web Frameworks]({{ site.baseurl }}/data/notes/WebFrameworks.pdf)
     * Examples:  [JS functions]({{ site.baseurl }}/data/notes/JS_functions.html) |
    [jQuery Example #1]({{ site.baseurl }}/data/notes/jquery1.html) |
@@ -54,6 +53,7 @@ exclude_from_nav: false
     * Asynchronous examples: [asynchronous_example.html]({{ site.baseurl }}/data/notes/asynchronous_example.html) |
     [callback.html]({{ site.baseurl }}/data/notes/callback.html)
     * Highlighter extension: [highlighter.zip]({{ site.baseurl }}/data/notes/highlighter.zip)
+</div>
 * [Python Notebooks]({{ site.baseurl }}/data/notes/python_notebooks.zip) 
 * [Web Scraping]({{ site.baseurl }}/data/notes/WebScraping.pdf)
     * [Web Scraping Demo]({{ site.baseurl }}/data/notes/WebScrapingDemo.zip)
@@ -66,6 +66,8 @@ exclude_from_nav: false
      [JSON in Python]({{ site.baseurl }}/data/notes/JSON_objects_in_Python.ipynb)
 * R Programming ([R-intro.R]({{ site.baseurl }}/data/notes/R-intro.R) |
                 [dataframes.R]({{ site.baseurl }}/data/notes/dataframes.R))
+* Shiny ([shiny.R]({{ site.baseurl }}/data/notes/shiny.R) |
+        [telephones.zip]({{ site.baseurl }}/data/notes/telephones.zip))
 <br><br>
 <center>
 <div id = 'clicker'>
@@ -80,8 +82,6 @@ function viewAll() {
 * [Advanced programming]({{ site.baseurl }}/data/notes/PythonAdvanced.zip) 
 </div>
     * [webscraping.zip]({{ site.baseurl }}/data/notes/webscraping.zip)
-* Shiny ([shiny.R]({{ site.baseurl }}/data/notes/shiny.R) |
-        [telephones.zip]({{ site.baseurl }}/data/notes/telephones.zip))
 * Webscraping in R ([rvest.R]({{ site.baseurl }}/data/notes/rvest.R))
 * [WrapUp]({{ site.baseurl }}/data/notes/Wrapup.pdf) 
 

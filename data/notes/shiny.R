@@ -7,6 +7,10 @@
 #   - https://www.letsrun.com/shoes
 #   - http://freerangestats.info/blog/2018/05/13/nz-govt-shinyapps
 
+# Tutorials: https://shiny.rstudio.com/tutorial/
+#   - I recommend Shiny in 7 lessons, but video tutorials are also
+#     available.
+
 # To create a web application using shiny, we will create a UI
 # (user interface) and server. 
 
