@@ -19,8 +19,8 @@ exclude_from_nav: false
 * [Assignment #6]({{ site.baseurl }}/data/hw/hw6.ipynb) (Due: Wednesday, 03/23/22; Note: You may not use your grace period for this assignment)
 * [Assignment #7]({{ site.baseurl }}/data/hw/Assignment7.pdf) (Due: Monday, 03/28/22)
 * [Assignment #8]({{ site.baseurl }}/data/hw/Assignment8.zip) (Due: Monday, 04/04/22)
-<hr style = "height:1px; background-color:maroon;">
 * [Assignment #9]({{ site.baseurl }}/data/hw/Assignment9.pdf) (Due: Friday, 04/15/22)
+<hr style = "height:1px; background-color:maroon;">
 * [Assignment #10A]({{ site.baseurl }}/data/hw/swirl.pdf) (not collected)
 * [Assignment #10B]({{ site.baseurl }}/data/hw/babynames.zip) (Due: Monday, 04/25/22)
 
