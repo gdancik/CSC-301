@@ -68,6 +68,7 @@ exclude_from_nav: false
                 [dataframes.R]({{ site.baseurl }}/data/notes/dataframes.R))
 * Shiny ([shiny.R]({{ site.baseurl }}/data/notes/shiny.R) |
         [telephones.zip]({{ site.baseurl }}/data/notes/telephones.zip))
+* [WrapUp]({{ site.baseurl }}/data/notes/Wrapup.pdf) 
 <br><br>
 <center>
 <div id = 'clicker'>
@@ -83,7 +84,6 @@ function viewAll() {
 </div>
     * [webscraping.zip]({{ site.baseurl }}/data/notes/webscraping.zip)
 * Webscraping in R ([rvest.R]({{ site.baseurl }}/data/notes/rvest.R))
-* [WrapUp]({{ site.baseurl }}/data/notes/Wrapup.pdf) 
 
 
 
